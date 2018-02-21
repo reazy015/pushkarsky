@@ -1,0 +1,27 @@
+.order-btn {
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: $basic-red;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-align: center;
+  display: none;
+
+  &--header {
+    width: 142px;
+    font-size: 0.8em;
+    
+    @media (min-width: $tablet-sm-width) {
+      display: none;
+    }
+  }
+
+  &--nav {
+    margin-top: 20px;
+
+    @media (min-width: $mobile-sm-width) {
+      display: block;
+    }
+  }
+}

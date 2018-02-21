@@ -12,26 +12,58 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
 
-        <!-- Add your site or application content here -->
-        <p>Hello world! This is HTML5 Boilerplate.</p>
-        <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <header class="header">
+            <div class="container container-flex">
+                <div class="header-logo">
+                    <img src="img/logo.png" alt="logo-img" class="header-logo__img">
+                </div>
+                <div class="header-nav-btn" data-target="adaptive-nav">
+                    <div class="header-nav-btn__decor"></div>
+                    <div class="header-nav-btn__decor"></div>
+                    <div class="header-nav-btn__decor"></div>
+                </div>
+                <div class="order-btn order-btn--header">Заказать столик</div>
+                <nav class="header-nav header-nav--mobile">
+                    <ul class="header-nav-list">
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">Главная</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">О ресторане</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">3D тур</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">Меню</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">Мероприятия</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">Новости</a></li>
+                        <li class="header-nav-item"><a href="#" class="header-nav__link">Контакты</a></li>
+                    </ul>
+                    <div class="order-btn order-btn--nav">Заказать столик</div>
+                    <div class="header-nav-tablet">
+                        <div class="header-nav-tablet-logo-wrapper">
+                            <img src="" alt="logo-img" class="header-nav-tablet__logo">
+                        </div>
+                        <ul class="header-nav-tablet-socials">
+                            <li class="header-nav-tablet-socials__item"></li>
+                            <li class="header-nav-tablet-socials__item"></li>
+                            <li class="header-nav-tablet-socials__item"></li>
+                        </ul>
+                        <div class="header-nav-tablet__phone">+7 (921) 943-38-38</div>
+                        <div class="header-nav-tablet__address">Большая Пушкарская ул., 38</div>
+                        <div class="header-nav-tablet__schedule">ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-С</div>
+                    </div>
+                </nav>
+            </div>
+        </header>
 
-        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-        <script>
-            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
-        </script>
-        <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <section class="flex-gallery">
+            <div class="flex-gallery-item"><img class="flex-gallery-item__unit" src="img/bg/flex-gallery-item1.jpg" alt="gallery-img"></div>
+            <div class="flex-gallery-item"><img class="flex-gallery-item__unit" src="img/bg/flex-gallery-item3.jpg" alt="gallery-img"></div>
+            <div class="flex-gallery-item"><img class="flex-gallery-item__unit" src="img/bg/flex-gallery-item2.jpg" alt="gallery-img"></div>
+            <div class="flex-gallery-item"><img class="flex-gallery-item__unit" src="img/bg/flex-gallery-item5.jpg" alt="gallery-img"></div>
+            <div class="flex-gallery-item"><img class="flex-gallery-item__unit" src="img/bg/flex-gallery-item4.jpg" alt="gallery-img"></div>
+        </section>
+
+
+
     </body>
 </html>

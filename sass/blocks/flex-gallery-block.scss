@@ -1,0 +1,15 @@
+.flex-gallery {
+  display: flex;
+  min-height: 510px;
+}
+.flex-gallery-item {
+  flex: 1 1 100%;
+  transform: skew(-25deg);
+  overflow: hidden;
+}
+.flex-gallery-item__unit {
+  max-width: 100%;
+  height: auto;
+  transform: skew(25deg);
+  min-height: 510px;
+}
