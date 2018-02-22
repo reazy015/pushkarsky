@@ -62,7 +62,7 @@ $section-rotate: 30;
   width: 100%;
   transform: skewX(-30deg) translateZ(0);
   overflow: hidden;
-  margin-left: -1px;
+  margin-left: -2px;
   transition: flex-grow .3s;
 
 
@@ -80,6 +80,16 @@ $section-rotate: 30;
     width: 400%;
     height: 100%;
     transform: skewX(30deg);
+  }
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    left: -100%;
+    width: 400%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 
   &:nth-child(1):before {
