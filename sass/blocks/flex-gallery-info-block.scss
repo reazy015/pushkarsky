@@ -1,0 +1,44 @@
+.gallery-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-top: 43px;
+  padding-bottom: 35px;
+  color: $basic-white;
+  text-align: center;
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 18px;
+}
+.gallery-info-logo {
+  width: 200px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.gallery-info-logo__img {
+  max-width: 100%;
+  height: auto;
+}
+.gallery-info__phone {
+  font-weight: bold;
+  margin-bottom: 35px;
+}
+.gallery-info__address {
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+.gallery-info__schedule {
+  font-size: 0.8em;
+  line-height: 1.8;
+  margin-bottom: 25px;
+}
+.gallery-info-socials {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.gallery-info-socials__item {
+  margin-right: 15px;
+}

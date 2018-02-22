@@ -1,0 +1,44 @@
+.advantages {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.advantages-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  padding: 37px 15px 37px 15px;
+  background-size: cover;
+  background-position: center center;
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 18px;
+  color: $basic-white;
+
+  &--place-amount {
+    background-image: url(/img/advantages-block/main-2-1.jpg);
+  }
+
+  &--geo {
+    background-image: url(/img/advantages-block/main-2-2.jpg);
+  }
+
+  &--cusine {
+    background-image: url(/img/advantages-block/main-2-3.jpg);
+  }
+
+  &--atmo {
+    background-image: url(/img/advantages-block/main-2-4.jpg);
+  }
+
+  &--wifi {
+    background-image: url(/img/advantages-block/main-2-5.jpg);
+  }
+}
+.advantages-item-icon {
+  width: 50px;
+  margin-right: 13px;
+  flex-shrink: 0;
+}
+.advantages-item-icon__img {
+  max-width: 100%;
+  height: auto;
+}

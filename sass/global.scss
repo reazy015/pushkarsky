@@ -1,3 +1,6 @@
+.body {
+  overflow-x: hidden;
+}
 .container {
   max-width: 1420px;
   min-width: 280px;
@@ -7,4 +10,7 @@
 }
 .container-flex {
   display: flex;
+}
+.no-scroll {
+  overflow: hidden;
 }
