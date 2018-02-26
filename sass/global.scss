@@ -14,3 +14,8 @@
 .no-scroll {
   overflow: hidden;
 }
+.clearfix:after {
+  display: table;
+  content: '';
+  clear: both;
+}

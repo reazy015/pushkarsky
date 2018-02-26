@@ -1,0 +1,42 @@
+.about {
+  font-size: 24px;
+}
+.about__img {
+  width: 100%;
+  height: 284px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+}
+.about-inst__header {
+  margin-top: 55px;
+  margin-bottom: 34px;
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 1em;
+  color: $basic-blue;
+  text-align: center;
+}
+.about-inst__link {
+  display: block;
+  margin-bottom: 36px;
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 0.6em;
+  color: $basic-red;
+  text-align: center;
+  text-decoration: none;
+}
+.about-inst-gallery {
+  margin-left: -5px;
+  margin-right: -5px;
+  padding-bottom: 20px;
+}
+.about-inst-gallery-item {
+  padding: 5px;
+  padding-bottom: 0;
+  float: left;
+  max-width: 111px;
+}
+.about-inst-gallery__img {
+  max-width: 100%;
+  height: auto;
+}

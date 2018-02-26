@@ -1,0 +1,29 @@
+.order-block {
+  padding-top: 62px;
+  padding-bottom: 62px;
+}
+.order-block__header {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  text-align: center;
+  color: $basic-grey;
+}
+.order-block-decor-mobile {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 21px;
+  text-align: center;
+}
+.order-block-decor-mobile__img {
+  max-width: 100%;
+  height: auto;
+}
+.order-block-price {
+  max-width: 300px;
+  margin: auto;
+  margin-bottom: 47px;
+  text-align: center;
+}

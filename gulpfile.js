@@ -20,7 +20,7 @@ gulp.task('style', function () {
 });
 
 gulp.task('sprite', function () {
-    return gulp.src('img/*.svg')
+    return gulp.src('img/icon/*.svg')
         .pipe(svgstore({
             inlineSvg: true
         }))

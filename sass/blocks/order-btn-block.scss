@@ -1,4 +1,5 @@
 .order-btn {
+  width: 100%;
   padding-bottom: 15px;
   padding-top: 15px;
   background-color: $basic-red;
@@ -6,9 +7,11 @@
   text-transform: uppercase;
   color: $basic-white;
   text-align: center;
+  border: none;
   display: none;
 
   &--header {
+    display: none;
     width: 142px;
     font-size: 0.8em;
     
@@ -19,6 +22,7 @@
 
   &--nav {
     margin-top: 20px;
+    font-size: 0.8em;
 
     @media (min-width: $mobile-sm-width) {
       display: block;
@@ -28,5 +32,10 @@
   &--gallery {
     display: block;
     font-size: 0.8em
+  }
+
+  &--order-block {
+    display: block;
+    font-size: 0.8em;
   }
 }
