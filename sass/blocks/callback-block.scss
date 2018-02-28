@@ -1,0 +1,49 @@
+.callback {
+  padding-bottom: 64px;
+}
+.callback__header {
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 30px;
+  color: $basic-blue;
+  text-align: center;
+}
+.callback-decor {
+  margin-bottom: 23px;
+  margin-top: 26px;
+}
+.callback-decor__img {
+  max-width: 100%;
+  height: auto;
+}
+.callback__text {
+  margin-top: 47px;
+  margin-bottom: 53px;
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 1em;
+  color: $basic-blue;
+  line-height: 1.4;
+}
+.callback-form {
+  display: flex;
+  flex-direction: column;
+}
+.callback-form__input {
+  margin-bottom: 10px;
+  padding: 15px 15px;
+  border: none;
+  border-bottom: 1px solid $basic-border-grey;
+  text-align: center;
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $basic-red;
+  }
+}
+.callback-form__submit {
+  margin-top: 43px;
+  border: none;
+  background-color: $basic-blue;
+  color: $basic-white;
+  padding: 15px 20px;
+  border-radius: 50px;
+}
