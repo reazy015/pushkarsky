@@ -9,6 +9,7 @@
   text-align: center;
   border: none;
   display: none;
+  cursor: pointer;
 
   &--header {
     display: none;
@@ -27,6 +28,10 @@
     @media (min-width: $mobile-sm-width) {
       display: block;
     }
+
+    @media (min-width: $tablet-xs-width) {
+      align-self: self-start;
+    }
   }
 
   &--gallery {
@@ -42,5 +47,19 @@
   &--callback {
     display: block;
     font-size: 0.8em;
+    margin-bottom: 48px!important;
+
+    @media (min-width: $tablet-xs-width) {
+      margin-bottom: 90px;
+    }
+  }
+
+  &:focus {
+    outline: none
+  }
+
+  @media (min-width: $tablet-xs-width) {
+    max-width: 223px;
+    margin: auto;
   }
 }

@@ -1,4 +1,5 @@
 .about {
+  position: relative;
   font-size: 24px;
 }
 .about__img {
@@ -7,9 +8,30 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 30% 50%;
+
+  @media (min-width: $tablet-sm-width) {
+    height: 716px;
+    background-size: auto;
+  }
+}
+.about-inst {
+  padding-top: 55px;
+  max-width: 608px;
+  margin: auto;
+
+  @media (min-width: $tablet-sm-width) {
+    position: absolute;
+    width: 608px;
+    padding-bottom: 53px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 20;
+    background-color: $basic-white;
+  }
 }
 .about-inst__header {
-  margin-top: 55px;
+  margin-top: 0;
   margin-bottom: 34px;
   font-family: "Cambria", "Arial", sans-serif;
   font-size: 1em;
@@ -29,12 +51,18 @@
   margin-left: -5px;
   margin-right: -5px;
   padding-bottom: 20px;
+  text-align: center;
 }
 .about-inst-gallery-item {
   padding: 5px;
   padding-bottom: 0;
   float: left;
   max-width: 29.9%;
+  
+  @media (min-width: 542px) {
+    float: none;
+    display: inline-block;
+  }
 }
 .about-inst-gallery__img {
   max-width: 100%;

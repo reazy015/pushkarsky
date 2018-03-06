@@ -32,6 +32,19 @@
   &--wifi {
     background-image: url(/img/advantages-block/main-2-5.jpg);
   }
+
+  @media (min-width: $tablet-xs-width) {
+    flex: 1 1 43%;
+    margin-right: 12px;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+    &:last-of-type {
+      flex: 1 1 100%;
+      margin-right: 0;
+    }
+  }
 }
 .advantages-item-icon {
   width: 50px;

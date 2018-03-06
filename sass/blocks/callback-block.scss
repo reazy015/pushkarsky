@@ -6,10 +6,12 @@
   font-size: 30px;
   color: $basic-blue;
   text-align: center;
+  font-weight: normal;
 }
 .callback-decor {
   margin-bottom: 23px;
   margin-top: 26px;
+  text-align: center;
 }
 .callback-decor__img {
   max-width: 100%;
@@ -22,10 +24,22 @@
   font-size: 1em;
   color: $basic-blue;
   line-height: 1.4;
+
+  @media (min-width: $tablet-xs-width) {
+    max-width: 468px;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 25px;
+  }
 }
 .callback-form {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-xs-width) {
+    max-width: 486px;
+    margin: auto;
+  }
 }
 .callback-form__input {
   margin-bottom: 10px;
@@ -46,4 +60,10 @@
   color: $basic-white;
   padding: 15px 20px;
   border-radius: 50px;
+
+  @media (min-width: $tablet-sm-width) {
+    width: 223px;
+    margin: auto;
+    margin-top: 67px;
+  }
 }
