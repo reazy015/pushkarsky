@@ -3,6 +3,7 @@
   background-color: $basic-blue;
   font-size: 16px;
   color: $basic-white;
+  overflow: hidden;
 }
 .footer-logo-link {
   display: block;
@@ -15,7 +16,6 @@
 }
 .footer-contacts {
   padding-bottom: 36px;
-  border-bottom: 1px solid $basic-border-grey;
 }
 .footer-contacts__phone {
   margin-top: 38px;

@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const svgstore = require('svgstore');
+const svgstore = require('gulp-svgstore');
 const cheerio = require('gulp-cheerio');
 const rename = require('gulp-rename');
 const plumber = require('gulp-plumber');
@@ -20,13 +20,15 @@ gulp.task('style', function () {
 });
 
 gulp.task('sprite', function () {
-    return gulp.src('img/icon/*.svg')
+    return gulp.src('img/icons/*.svg')
         .pipe(svgstore({
             inlineSvg: true
         }))
-
+        .pipe(cheerio(function ($) {
+            $("style").remove()
+        }))
         .pipe(rename('sprite.svg'))
-        .pipe(gulp.dest('img'));
+        .pipe(gulp.dest('img/sprite'));
 });
 
 
