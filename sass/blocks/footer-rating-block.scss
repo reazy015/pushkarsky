@@ -36,6 +36,10 @@
       display: none;
     }
   }
+
+  @media (min-width: $tablet-sm-width) {
+    flex: 0 1 330px;
+  }
 }
 .footer-rating-item {
   flex: 0 1 150px;

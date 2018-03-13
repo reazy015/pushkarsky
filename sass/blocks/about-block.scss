@@ -13,6 +13,10 @@
     height: 716px;
     background-size: auto;
   }
+
+  @media (min-width: $tablet-lg-width) {
+    background-size: cover;
+  }
 }
 .about-inst {
   padding-top: 55px;
@@ -28,6 +32,14 @@
     transform: translate(-50%);
     z-index: 20;
     background-color: $basic-white;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    width: 80%;
+    max-width: 1420px;
+    padding-left: 2%;
+    padding-right: 2%;
+    top: 76%;
   }
 }
 .about-inst__header {
@@ -52,6 +64,10 @@
   margin-right: -5px;
   padding-bottom: 20px;
   text-align: center;
+  
+  @media (min-width: $tablet-lg-width) {
+    display: flex;
+  }
 }
 .about-inst-gallery-item {
   padding: 5px;

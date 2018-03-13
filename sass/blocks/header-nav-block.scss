@@ -16,6 +16,9 @@
     flex-wrap: wrap;
   }
 }
+.body--about .header-nav {
+  position: static;
+}
 .header-nav--mobile {
   transform: translate(100%);
 }
@@ -72,6 +75,11 @@
 .header-nav-btn--open {
 
 }
+.body--about .header-nav-btn {
+  @media (min-width: $tablet-lg-width) {
+    display: none;
+  }
+}
 .header-nav-tablet {
   display: none;
   text-align: center;
@@ -79,6 +87,11 @@
   @media (min-width: $tablet-xs-width) {
     display: block;
     flex: 0 1 50%;
+  }
+}
+.body--about .header-nav-tablet {
+  @media (min-width: $tablet-lg-width) {
+    display: none;
   }
 }
 .header-nav-tablet__logo {

@@ -13,6 +13,18 @@
       display: flex;
       flex-wrap: wrap;
     }
+
+    @media (min-width: $tablet-lg-width) {
+      flex-wrap: nowrap;
+    }
+  }
+  
+  &--callback {
+    @media (min-width: $tablet-lg-width) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
   }
 }
 .container-flex {

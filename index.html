@@ -66,27 +66,42 @@
             </section>
 
             <div class="gallery-info">
-                <div class="container">
+                <div class="container container--mod">
                     <div class="gallery-info-logo">
                         <img src="/img/logos/logo-main.png" alt="logo-img" class="gallery-info-logo__img">
                     </div>
 
-                    <div class="gallery-info__phone">+7 (921) 943-38-38</div>
+                    <div class="gallery-info-contacts">
+                        <div class="gallery-info__phone">+7 (921) 943-38-38</div>
 
-                    <ul class="gallery-info-socials">
-                        <li class="gallery-info-socials__item"><i class="fab fa-vk"></i></li>
-                        <li class="gallery-info-socials__item"><i class="fab fa-facebook-f"></i></li>
-                        <li class="gallery-info-socials__item"><i class="fab fa-instagram"></i></li>
-                    </ul>
+                        <ul class="gallery-info-socials">
+                            <li class="gallery-info-socials__item"><i class="fab fa-vk"></i></li>
+                            <li class="gallery-info-socials__item"><i class="fab fa-facebook-f"></i></li>
+                            <li class="gallery-info-socials__item"><i class="fab fa-instagram"></i></li>
+                        </ul>
+                    </div>
 
-                    <div class="gallery-info__address">Большая Пушкарская ул., 38</div>
-                    <div class="gallery-info__schedule">ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-СБ 12:00 - 00:00</div>
+                    <div class="gallery-info-add">
+                        <div class="gallery-info__address">Большая Пушкарская ул., 38</div>
+                        <div class="gallery-info__schedule">ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-СБ 12:00 - 00:00</div>
+                    </div>
 
                     <div class="order-btn order-btn--gallery">Заказать столик</div>
                 </div>
             </div>
         </div>
 
+        <nav class="main-nav">
+            <ul class="main-nav-list">
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">Главная</a></li>
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">О ресторане</a></li>
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">3D тур</a></li>
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">Меню</a></li>
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">Мероприятия</a></li>
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">Новости</a></li>
+                <li class="main-nav-list-item"><a href="#" class="main-nav-list-item__link">Конакты</a></li>
+            </ul>
+        </nav>
         <main>
             <section class="advantages">
                 <div class="container container--advantages">
@@ -130,6 +145,12 @@
                    <div class="order-block-price-container">
                        <div class="order-block-decor-mobile">
                            <img src="/img/decor/divider.png" alt="decor-img" class="order-block-decor-mobile__img">
+                       </div>
+                       <div class="order-block-decor-tablet">
+                           <img src="/img/decor/divider2.png" alt="decor-img" class="order-block-decor-tablet__img">
+                       </div>
+                       <div class="order-block-decor-tablet">
+                           <img src="/img/decor/divider2.png" alt="decor-img" class="order-block-decor-tablet__img">
                        </div>
                        <div class="order-block-price">
                            <img src="/img/decor/1600p.png" alt="1600 р" class="order-block-price__img">
@@ -207,26 +228,41 @@
             </section>
 
             <section class="callback">
-                <div class="container">
+                <div class="container container--callback">
                     <h3 class="callback__header">Обратная связь</h3>
                     <div class="callback-decor">
                         <img src="/img/decor/divider.png" alt="decor-img" class="callback-decor__img">
                     </div>
                     <button class="order-btn order-btn--callback">Заказать столик</button>
-                    <p class="callback__text">
-                        Проводите у нас банкеты и праздники,
-                        или просто приходите вкусно поесть.
-                        Мы всегда рады гостям! Заполните форму
-                        ниже, и мы обязательно вам перезвоним.
-                    </p>
-                    <div class="callback-form-container">
-                        <form action="" class="callback-form">
-                            <input class="callback-form__input" type="text" name="name" placeholder="Имя и фамилия">
-                            <input class="callback-form__input" type="text" name="phone" placeholder="Телефон">
-                            <input class="callback-form__input" type="text" name="mail" placeholder="E-mail">
-                            <input class="callback-form__input" type="text" name="comment" placeholder="Комментарий">
-                            <input class="callback-form__submit" type="submit" value="Отправить">
-                        </form>
+
+
+                    <div class="callback-part-container">
+                        <div class="callback-block">
+                            <div class="callback-block-logo-wrapper">
+                                <img src="/img/logos/logo-main.png" alt="logo">
+                            </div>
+                            <button class="order-btn order-btn--callback-block">Заказать столик</button>
+                        </div>
+                    </div>
+                    <div class="callback-decor-desktop">
+                        <img src="/img/decor/divider3.png" alt="decor">
+                    </div>
+                    <div class="callback-part-container">
+                        <p class="callback__text">
+                            Проводите у нас банкеты и праздники,
+                            или просто приходите вкусно поесть.
+                            Мы всегда рады гостям! Заполните форму
+                            ниже, и мы обязательно вам перезвоним.
+                        </p>
+                        <div class="callback-form-container">
+                            <form action="" class="callback-form">
+                                <input class="callback-form__input" type="text" name="name" placeholder="Имя и фамилия">
+                                <input class="callback-form__input" type="text" name="phone" placeholder="Телефон">
+                                <input class="callback-form__input" type="text" name="mail" placeholder="E-mail">
+                                <input class="callback-form__input" type="text" name="comment" placeholder="Комментарий">
+                                <input class="callback-form__submit" type="submit" value="Отправить">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -337,8 +373,8 @@
                     <div class="footer-sub-container">
                         <div class="footer-sub-slogan">Подпишитесь на рассылку новостией</div>
                         <form action="" class="footer-sub-form">
-                            <input type="text" name="mail" class="footer-sub-form__input">
-                            <input type="submit" class="footer-sub-form__submit">
+                            <input type="text" name="mail" class="footer-sub-form__input" placeholder="Ваш e-mail">
+                            <button name="button" type="submit" class="footer-sub-form__submit footer-sub-form__submit--icon"></button>
                         </form>
                     </div>
                 </div>

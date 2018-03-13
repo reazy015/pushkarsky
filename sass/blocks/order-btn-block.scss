@@ -52,6 +52,16 @@
     @media (min-width: $tablet-xs-width) {
       margin-bottom: 90px;
     }
+    
+    @media (min-width: $tablet-lg-width) {
+      display: none;
+
+    }
+  }
+
+  &--callback-block {
+    display: block;
+    font-size: 0.8em;
   }
 
   &:focus {
@@ -61,5 +71,10 @@
   @media (min-width: $tablet-xs-width) {
     max-width: 223px;
     margin: auto;
+  }
+}
+.body--about .order-btn--nav {
+  @media (min-width: $tablet-lg-width) {
+    display: none;
   }
 }

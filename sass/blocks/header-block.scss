@@ -5,7 +5,15 @@
   background-color: $basic-blue;
   font-family: "Calibri", "Arial", sans-serif;
   font-size: 16px;
+
+  @media (min-width: $tablet-lg-width) {
+    display: none;
+  }
 }
 .header-logo {
+  display: block;
+}
+
+.body--about .header {
   display: block;
 }

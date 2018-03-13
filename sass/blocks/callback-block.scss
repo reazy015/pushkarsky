@@ -1,5 +1,11 @@
 .callback {
   padding-bottom: 64px;
+
+  @media (min-width: $tablet-sm-width) {
+    background-image: url(/img/bg/about-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 .callback__header {
   font-family: "Cambria", "Arial", sans-serif;
@@ -7,11 +13,30 @@
   color: $basic-blue;
   text-align: center;
   font-weight: normal;
+
+  @media (min-width: $tablet-lg-width) {
+    flex: 1 1 100%;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    margin-bottom: 73px;
+  }
 }
 .callback-decor {
   margin-bottom: 23px;
   margin-top: 26px;
   text-align: center;
+  
+  @media (min-width: $tablet-lg-width) {
+    display: none;
+  }
+}
+.callback-decor-desktop {
+  display: none;
+  
+  @media (min-width: $tablet-lg-width) {
+    display: block;
+  }
 }
 .callback-decor__img {
   max-width: 100%;
@@ -31,6 +56,10 @@
     text-align: center;
     margin-bottom: 25px;
   }
+
+  @media (min-width: $tablet-lg-width) {
+    text-align: left;
+  }
 }
 .callback-form {
   display: flex;
@@ -47,10 +76,16 @@
   border: none;
   border-bottom: 1px solid $basic-border-grey;
   text-align: center;
+  background-color: transparent;
 
   &:focus {
     outline: none;
     border-bottom: 1px solid $basic-red;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    text-align: left;
+    padding-left: 0px;
   }
 }
 .callback-form__submit {
@@ -65,5 +100,23 @@
     width: 223px;
     margin: auto;
     margin-top: 67px;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}
+.callback-block {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: $basic-white;
+  text-align: center;
+  box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.55);
+  width: 474px;
+  display: none;
+  
+  @media (min-width: $tablet-lg-width) {
+    display: block;
   }
 }

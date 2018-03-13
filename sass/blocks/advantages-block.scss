@@ -45,6 +45,21 @@
       margin-right: 0;
     }
   }
+
+  @media (min-width: $tablet-lg-width) {
+    flex-direction: column;
+    flex: 1 1 20%;
+    margin-right: 2%;
+    text-align: center;
+
+    &:nth-of-type(2n) {
+      margin-right: 2%;
+    }
+    &:last-of-type  {
+      flex: 1 1 20%;
+      margin-right: 0;
+    }
+  }
 }
 .advantages-item-icon {
   width: 50px;

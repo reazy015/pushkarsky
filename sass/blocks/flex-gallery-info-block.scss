@@ -15,6 +15,11 @@
   width: 200px;
   margin: auto;
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-sm-width) {
+    order: 3;
+    flex: 1 1 100%;
+  }
 }
 .gallery-info-logo__img {
   max-width: 100%;
@@ -38,7 +43,38 @@
   display: flex;
   justify-content: center;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-sm-width) {
+    justify-content: flex-end;
+  }
 }
 .gallery-info-socials__item {
   margin-right: 15px;
+}
+.container--mod {
+  @media (min-width: $tablet-sm-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.gallery-info-contacts {
+  @media (min-width: $tablet-sm-width) {
+    order: 2;
+    flex: 1 1 50%;
+    text-align: right;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.gallery-info-add {
+  @media (min-width: $tablet-sm-width) {
+    order: 1;
+    text-align: left;
+    flex: 1 1 50%;
+  }
+}
+.order-btn--gallery {
+  @media (min-width: $tablet-sm-width) {
+    order: 4;
+  }
 }
