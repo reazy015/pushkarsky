@@ -75,6 +75,8 @@
 }
 .body--about .order-btn--nav {
   @media (min-width: $tablet-lg-width) {
-    display: none;
+    display: block;
+    width: 155px;
+    margin-right: 0;
   }
 }

@@ -30,6 +30,9 @@
 .container-flex {
   display: flex;
 }
+.body--about .container-flex {
+  align-items: center;
+}
 .no-scroll {
   overflow: hidden;
 }
