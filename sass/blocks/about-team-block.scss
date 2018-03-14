@@ -1,8 +1,30 @@
 .rest-about-team {
   font-size: 16px;
+
+  @media (min-width: $tablet-xs-width) {
+    display: flex;
+  }
 }
 .rest-about-team-pos {
+  font-family: "Calibri", "Arial", sans-serif;
   text-transform: uppercase;
+}
+.rest-about-team-name {
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 1.2em;
+}
+.rest-about-team-article {
+  padding-top: 30px;
+  padding-bottom: 68px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: $basic-blue;
+  font-family: "Calibri", "Arial", sans-serif;
+  line-height: 1.8;
+
+  @media (min-width: $tablet-xs-width) {
+    order: 3;
+  }
 }
 .name-container {
   background-color: $basic-submit-red;
@@ -10,8 +32,17 @@
   padding-bottom: 40px;
   text-align: center;
   color: $basic-white;
+
+  @media (min-width: $tablet-xs-width) {
+    order: 21;
+  }
 }
 .photo-container {
   height: 280px;
   width: 100%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-xs-width) {
+    order: 1;
+  }
 }

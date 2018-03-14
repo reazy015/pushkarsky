@@ -1,0 +1,45 @@
+.menu-download {
+  padding: 10px;
+}
+.menu-download-block {
+  padding: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+.menu-download-block-info {
+  border: 1px solid $basic-border-grey;
+  text-align: center;
+  color: $basic-white;
+  padding-top: 38px;
+  padding-bottom: 38px;
+}
+.menu-download-block-info__header {
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 21px;
+  margin-top: 31px;
+  margin-bottom: 37px;
+}
+.menu-icon {
+  fill: $basic-white;
+}
+.download-btn {
+  width: 149px;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  background-color: $basic-submit-red;
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: $basic-white;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 14px;
+}
