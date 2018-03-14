@@ -57,15 +57,73 @@
 </header>
 
 <main>
-    <div class="container">
-        <section class="rest-about">
-            <h1 class="rest-about__header">О нас</h1>
-            <div class="rest-about-decor">
-                <img src="" alt="">
-            </div>
+    <div class="">
+        <h1 class="rest-about__header">О нас</h1>
+        <div class="rest-about-decor">
+            <img src="/img/decor/divider.png" alt="decor">
+        </div>
 
-            <div class="rest-about-slider"></div>
+        <section class="rest-about-slider">
+            <div class="rest-about-slider-item">
+                <img src="/img/bg/about2.jpg" alt="about-slide" class="rest-about-slider__img">
+            </div>
+            <div class="rest-about-slider-item">
+                <img src="/img/bg/about3.jpg" alt="about-slide" class="rest-about-slider__img">
+            </div>
+            <div class="rest-about-slider-item">
+                <img src="/img/bg/about1.jpg" alt="about-slide" class="rest-about-slider__img">
+            </div>
+            <div class="rest-about-slider-item">
+                <img src="/img/bg/about1.jpg" alt="about-slide" class="rest-about-slider__img">
+            </div>
         </section>
+
+        <section class="rest-about-descr">
+            <article class="rest-about-article">
+                <h2 class="rest-about-article__header">
+                    <svg role="header-icon" class="about-header-icon" width="40" height="50"  viewbox="0 0 60 60">
+                        <use xlink:href="img/sprite/sprite.svg#001-food"></use>
+                    </svg>
+                    Особенности подхода к работе
+                </h2>
+                <p class="rest-about-article__paragraph">В блюдах Pushkarski используются как традиционные способы приготовления, так и современные методики, однако мы не  злоупотребляем новомодными молекулярными экспериментами. </p>
+                <p class="rest-about-article__paragraph">Основная задача команды – передать русскую гастрономическую натуру, которой чужды крошечные порции и вычурная декоративность. Несмотря на наличие в меню лёгких диетических блюд, большая его часть всё-таки рассчитана на тех, кто любит поесть. </p>
+                <p class="rest-about-article__paragraph">Упор на местные продукты в нашем ресторане это не бравада, а логичное и эффективное решение. Например, часть поставок приходит из нашего собственного подсобного хозяйства, расположенного в Подмосковье. </p>
+                <p class="rest-about-article__paragraph">Наши повара черпают вдохновение в традиционных русских ингредиентах, которым они придают новое, неожиданное звучание. Поэтому осетрина подается с чёрным кус-кусом и бланшированным на сливочном масле шпинатом, полбу с цесаркой дополняет топленое масло и щучья икра, а крем из топленого молока сопровождает черная смородина и соленая карамель.</p>
+            </article>
+
+            <article class="rest-about-article">
+                <h2 class="rest-about-article__header">
+                    <svg role="header-icon" class="about-header-icon" width="40" height="50"  viewbox="0 0 60 60">
+                        <use xlink:href="img/sprite/sprite.svg#002-food-1"></use>
+                    </svg>
+                    Наша жизнь в PUSHKARSKI
+                </h2>
+                <p class="rest-about-article__paragraph">Ресторан Pushkarski - это сочетание традиций и современности. Смело экспериментировать мы можем благодаря талантливой команде людей, страстно любящих русскую кухню и трепетно относящихся к русским традициям. </p>
+                <p class="rest-about-article__paragraph">Основа кухни ресторана, без которой успех невозможен - отборные продукты высокого качества. Особенность современной кухни в нашем понимании - это умение подчеркнуть вкус продукта, выгодно преподнести его особенности.  </p>
+                <p class="rest-about-article__paragraph">Мы не используем чрезмерное количество специй и маринадов, а колбаски делаем из того же мяса, которое идет на другие. </p>
+            </article>
+
+            <button class="order-btn order-btn--article">Заказать столик</button>
+        </section>
+
+        <section class="rest-about-team">
+            <div class="name-container">
+                <div class="rest-about-team-icon">
+                    <img src="/img/icons/leaf.png" alt="icon">
+                </div>
+                <div class="rest-about-team-pos">
+                    шев-повар
+                </div>
+                <div class="rest-about-team-name">Константин Константинов</div>
+            </div>
+            <div class="photo-container" style="background-image: url(/img/bg/shef.png)"></div>
+            <article class="rest-about-team-article">
+                <p>Основа кухни ресторана, без которой успех невозможен - отборные продукты высокого качества. Особенность современной кухни в нашем понимании - это умение подчеркнуть вкус продукта, выгодно преподнести его особенности.</p>
+                <p>Мы не используем чрезмерное количество специй и маринадов, а колбаски делаем из того же мяса, которое идет на другие блюда, не пытаясь разбавить его соей.</p>
+            </article>
+        </section>
+
     </div>
 </main>
 
@@ -188,17 +246,12 @@
     </div>
 </footer>
 
-<!--<div class="flex-gallery-item__unit" style="background-image: url(img/bg/flex-gallery-item1.jpg)"></div>-->
-<!--<div class="flex-gallery-item__unit" style="background-image: url(img/bg/flex-gallery-item3.jpg)"></div>-->
-<!--<div class="flex-gallery-item__unit" style="background-image: url(img/bg/flex-gallery-item2.jpg)"></div>-->
-<!--<div class="flex-gallery-item__unit" style="background-image: url(img/bg/flex-gallery-item5.jpg)"></div>-->
-<!--<div class="flex-gallery-item__unit" style="background-image: url(img/bg/flex-gallery-item4.jpg)"></div>-->
+<script src="js/vendor/jquery-3.2.1.min.js"></script>
 <script src="js/vendor/svg4everybody.min.js"></script>
+<script src="js/vendor/slick.min.js"></script>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
 <script src="js/mobileNavBlock.js"></script>
-<script>
-
-</script>
+<script src="js/slidersConfig.js"></script>
 </body>
 
 </html>

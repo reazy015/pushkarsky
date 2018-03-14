@@ -1,0 +1,24 @@
+.rest-about-descr {
+  padding: 50px 10px;
+  font-size: 18px;
+}
+.about-header-icon {
+  fill: $basic-submit-red;
+  margin-right: 15px;
+}
+.rest-about-article {
+  color: $basic-blue;
+}
+.rest-about-article__header {
+  display: flex;
+  align-items: center;
+  font-family: "Cambria", "Arial", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 1em;
+}
+.rest-about-article__paragraph {
+  font-family: "Calibri", "Arial", sans-serif;
+  font-size: 0.8em;
+  line-height: 1.8;
+}

@@ -2,7 +2,7 @@
   width: 100%;
   padding-bottom: 15px;
   padding-top: 15px;
-  background-color: $basic-red;
+  background-color: $basic-submit-red;
   border-radius: 50px;
   text-transform: uppercase;
   color: $basic-white;
@@ -57,6 +57,11 @@
       display: none;
 
     }
+  }
+
+  &--article {
+    display: block;
+    font-size: 0.8em;
   }
 
   &--callback-block {
