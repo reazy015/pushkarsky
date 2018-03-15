@@ -1,0 +1,34 @@
+.news {
+  padding-top: 40px;
+}
+.news__header {
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 30px;
+  font-weight: normal;
+  text-align: center;
+  color: $basic-blue;
+}
+.news-decor {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.news-decor__img {
+  width: 100%;
+  height: auto;
+}
+.news-container {
+  max-width: $container-max-width;
+  margin: auto;
+
+  @media (min-width: $tablet-xs-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    justify-content: space-around;
+  }
+}

@@ -1,5 +1,19 @@
 .menu-download {
   padding: 10px;
+
+  @media (min-width: $tablet-xs-width) {
+    display: flex;
+    max-width: 1420px;
+    margin: auto;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: space-between;
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
 }
 .menu-download-block {
   padding: 10px;
@@ -10,6 +24,20 @@
   &:last-of-type {
     margin-bottom: 0;
   }
+
+  @media (min-width: $tablet-xs-width) {
+    flex: 1 1 auto;
+    margin-right: 10px;
+    max-height: 345px;
+
+    &:last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    flex: 0 1 660px;
+  }
 }
 .menu-download-block-info {
   border: 1px solid $basic-border-grey;
@@ -17,12 +45,26 @@
   color: $basic-white;
   padding-top: 38px;
   padding-bottom: 38px;
+
+  @media (min-width: $tablet-xs-width) {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-top: 54px;
+    padding-bottom: 54px;
+  }
 }
 .menu-download-block-info__header {
   font-family: "Cambria", "Arial", sans-serif;
   font-size: 21px;
   margin-top: 31px;
   margin-bottom: 37px;
+
+  @media (min-width: $tablet-xs-width) {
+    margin-bottom: 64px;
+  }
 }
 .menu-icon {
   fill: $basic-white;

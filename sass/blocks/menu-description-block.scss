@@ -1,7 +1,108 @@
-.menu-description__header {
-  text-align: center;
+.menu-bg {
+  @media (min-width: $tablet-xs-width) {
+    background-color: $basic-layout-bg;
+    padding-bottom: 46px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
-.menu-description__img {
+.menu-description {
+  font-size: 18px;
+  @media (min-width: $tablet-xs-width) {
+    max-width: 1420px;
+    margin: auto;
+    padding-top: 83px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 60px;
+    background-color: $basic-white;
+    box-shadow: 0px 0px 15px -1px rgba(0,0,0,0.75);
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-left: 118px;
+    padding-right: 118px;
+  }
+}
+.menu-description__header {
+  font-family: "Cambria", "Arial", sans-serif;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  color: $basic-blue;
+}
+.menu-description-decor {
+  text-align: center;
+  max-width: 377px;
+  margin: auto;
+  margin-top: 32px;
+  margin-bottom: 43px;
+}
+.menu-description-decor__img,
+.menu-description__img{
   width: 100%;
   height: auto;
+}
+.menu-description-img-wrapper {
+  @media (min-width: $tablet-lg-width) {
+    flex: 1 1 701px;
+  }
+
+  @media (min-width: $container-max-width) {
+    flex: 0 0 701px;
+    transform: translateX(160px);
+
+    &--last {
+      transform: translateX(-160px);
+    }
+  }
+}
+.menu-description-text-wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 42px;
+  padding-bottom: 67px;
+  font-family: "Calibri", "Arial", sans-serif;
+  line-height: 1.6;
+  color: $basic-blue;
+  font-size: 0.8em;
+
+  @media (min-width: $tablet-sm-width) {
+    font-size: 1em;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    flex: 1 1 547px;
+
+    margin-right: 90px;
+
+    &--last {
+      margin-right: 0;
+      margin-left: 90px;
+
+      @media (min-width: $container-max-width) {
+        margin-left: 0;
+        transform: translateX(-70px)!important;
+      }
+    }
+  }
+
+  @media (min-width: $container-max-width) {
+    margin-right: 0;
+    margin-left: 0;
+    flex: 1 0 547px;
+    transform: translateX(70px);
+  }
+}
+.menu-description-block {
+  @media (min-width: $tablet-lg-width) {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 100px;
+    align-items: center;
+
+    &:last-of-type {
+      flex-direction: row;
+    }
+  }
 }
