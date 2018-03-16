@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body class="body body--about">
+<body class="body body--about body--events">
 
 <header class="header">
     <div class="container container-flex">
@@ -57,66 +57,81 @@
 </header>
 
 <main class="events">
-    <h1 class="events__header">Мероприятия</h1>
-    <div class="events-decor-wrapper">
-        <img src="/img/decor/divider.png" alt="divider" class="event-decor__img">
+    <div class="events-container">
+        <h1 class="events__header">Мероприятия</h1>
+        <div class="events-decor-wrapper">
+            <img src="/img/decor/divider.png" alt="divider" class="event-decor__img">
+        </div>
+
+        <section class="events-description">
+            <div class="events-gallery">
+                <div class="events-gallery-item" style="background-image: url(/img/events/events-1.jpg)">
+                    <h2 class="events-gallery__header">Корпоративы</h2>
+                </div>
+                <div class="events-gallery-item" style="background-image: url(/img/events/events-2.jpg)">
+                    <h2 class="events-gallery__header">Свадьбы</h2>
+                </div>
+                <div class="events-gallery-item" style="background-image: url(/img/events/events-3.jpg)">
+                    <h2 class="events-gallery__header">Дни Рождения</h2>
+                </div>
+                <div class="events-gallery-item" style="background-image: url(/img/events/events-4.jpg)">
+                    <h2 class="events-gallery__header">Банкеты</h2>
+                </div>
+            </div>
+
+            <div class="events-description-text-wrapper">
+                <p class="events-description__text">В блюдах Pushkarski используются как традиционные способы приготовления, так и современные методики, однако мы не  злоупотребляем новомодными молекулярными экспериментами. </p>
+                <p class="events-description__text">Наши повара черпают вдохновение в традиционных русских ингредиентах, которым они придают новое, неожиданное звучание. Поэтому осетрина подается с чёрным кус-кусом и бланшированным на сливочном масле шпинатом, полбу с цесаркой дополняет топленое масло и щучья икра, а крем из топленого молока сопровождает черная смородина и соленая карамель.</p>
+            </div>
+        </section>
+
+        <section class="events-specials">
+            <div class="events-specials-item">
+                <div class="events-specials-icon-wrapper">
+                    <img src="/img/icons/004-furniture.svg" alt="icon" class="events-specials__icon">
+                </div>
+                <h4 class="events-specials-item__header">50 посадочных<br> мест</h4>
+            </div>
+            <div class="events-specials-item">
+                <div class="events-specials-icon-wrapper">
+                    <img src="/img/icons/003-placeholder.svg" alt="icon" class="events-specials__icon">
+                </div>
+                <h4 class="events-specials-item__header">Расположение<br> в центре города</h4>
+            </div>
+            <div class="events-specials-item">
+                <div class="events-specials-icon-wrapper">
+                    <img src="/img/icons/002-birch.svg" alt="icon" class="events-specials__icon">
+                </div>
+                <h4 class="events-specials-item__header">Современная<br> русская кухня</h4>
+            </div>
+            <div class="events-specials-item">
+                <div class="events-specials-icon-wrapper">
+                    <img src="/img/icons/001-birthday-boy.svg" alt="icon" class="events-specials__icon">
+                </div>
+                <h4 class="events-specials-item__header">Всегда праздничная<br> атмосфера</h4>
+            </div>
+            <div class="events-specials-item">
+                <div class="events-specials-icon-wrapper">
+                    <img src="/img/icons/signal.svg" alt="icon" class="events-specials__icon">
+                </div>
+                <h4 class="events-specials-item__header">Бесплатный<br> Wifi</h4>
+            </div>
+        </section>
+
+        <button class="order-btn order-btn--events">Заказать мероприятие</button>
     </div>
-    
-    <section class="events-description">
-        <div class="events-gallery">
-            <div class="events-gallery-item" style="background-image: url(/img/events/events-1.jpg)">
-                <h2 class="events-gallery__header">Корпоративы</h2>
-            </div>
-            <div class="events-gallery-item" style="background-image: url(/img/events/events-2.jpg)">
-                <h2 class="events-gallery__header">Свадьбы</h2>
-            </div>
-            <div class="events-gallery-item" style="background-image: url(/img/events/events-3.jpg)">
-                <h2 class="events-gallery__header">Дни Рождения</h2>
-            </div>
-            <div class="events-gallery-item" style="background-image: url(/img/events/events-4.jpg)">
-                <h2 class="events-gallery__header">Банкеты</h2>
-            </div>
-        </div>
 
-        <div class="events-description-text-wrapper">
-            <p class="event-description__text">В блюдах Pushkarski используются как традиционные способы приготовления, так и современные методики, однако мы не  злоупотребляем новомодными молекулярными экспериментами. </p>
-            <p class="events-description__text">Наши повара черпают вдохновение в традиционных русских ингредиентах, которым они придают новое, неожиданное звучание. Поэтому осетрина подается с чёрным кус-кусом и бланшированным на сливочном масле шпинатом, полбу с цесаркой дополняет топленое масло и щучья икра, а крем из топленого молока сопровождает черная смородина и соленая карамель.</p>
-        </div>
-    </section>
-
-    <section class="events-specials">
-        <div class="events-specials-item">
-            <svg role="specials-icon" class="events-specials-item__icon" width="60" height="60" viewbox="0 0 56 56">
-                <use xlink:href="/img/sprite/sprite.svg#004-furniture"></use>
-            </svg>
-            <h4 class="events-specials-item__header">50 посадочных мест</h4>
-        </div>
-        <div class="events-specials-item">
-            <svg role="specials-icon" class="events-specials-item__icon" width="60" height="60">
-                <use xlink:href=""></use>
-            </svg>
-            <h4 class="events-specials-item__header">Расположение в центре города</h4>
-        </div>
-        <div class="events-specials-item">
-            <svg role="specials-icon" class="events-specials-item__icon" width="60" height="60">
-                <use xlink:href=""></use>
-            </svg>
-            <h4 class="events-specials-item__header">Современная русская кухня</h4>
-        </div>
-        <div class="events-specials-item">
-            <svg role="specials-icon" class="events-specials-item__icon" width="60" height="60">
-                <use xlink:href=""></use>
-            </svg>
-            <h4 class="events-specials-item__header">Всегда праздничная атмосфера</h4>
-        </div>
-        <div class="events-specials-item">
-            <svg role="specials-icon" class="events-specials-item__icon" width="60" height="60">
-                <use xlink:href=""></use>
-            </svg>
-            <h4 class="events-specials-item__header">Бесплатный Wifi</h4>
-        </div>
+    <section class="event-slider">
+        <img src="/img/events/event-slide1.jpg" alt="slide" class="event-slider-item">
+        <img src="/img/events/event-slide1.jpg" alt="slide" class="event-slider-item">
+        <img src="/img/events/event-slide1.jpg" alt="slide" class="event-slider-item">
+        <img src="/img/events/event-slide1.jpg" alt="slide" class="event-slider-item">
+        <img src="/img/events/event-slide1.jpg" alt="slide" class="event-slider-item">
+        <img src="/img/events/event-slide1.jpg" alt="slide" class="event-slider-item">
     </section>
 </main>
+
+
 
 <footer class="footer">
     <div class="container">

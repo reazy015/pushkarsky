@@ -1,5 +1,18 @@
+.events {
+  @media (min-width: $tablet-xs-width) {
+    background-color: $basic-layout-bg;
+  }
+}
+.events-container {
+  padding-top: 57px;
+  padding-bottom: 80px;
+  max-width: 1420px;
+  margin-right: 10px;
+  margin-left: 10px;
+  background-color: $basic-white;
+  margin-top: 25px;
+}
 .events__header {
-  margin-top: 57px;
   font-family: "Cambria", "Arial", sans-serif;
   font-size: 30px;
   font-weight: normal;

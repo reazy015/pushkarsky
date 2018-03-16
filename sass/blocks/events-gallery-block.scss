@@ -3,12 +3,28 @@
   flex-wrap: wrap;
   padding-left: 5px;
   padding-right: 5px;
+
+  @media (min-width: $tablet-xs-width) {
+    flex-wrap: nowrap;
+  }
 }
 .events-gallery-item {
   min-height: 145px;
-  flex: 1 1 145px;
+  flex: 1 1 135px;
   padding: 10px;
   margin: 5px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  @media (min-width: 460px) {
+    flex: 1 1 200px;
+    min-height: 176px;
+  }
+
+  @media (min-width: $tablet-xs-width) {
+
+  }
 }
 .events-gallery__header {
   display: flex;
@@ -22,6 +38,8 @@
   font-size: 18px;
   font-weight: normal;
   color: $basic-white;
+  text-align: center;
+  border-radius: 2px;
 }
 .events-description-text-wrapper {
   padding-left: 10px;
@@ -32,4 +50,7 @@
   font-size: 16px;
   font-weight: normal;
   color: $basic-blue;
+}
+.events-description__text {
+  line-height: 1.6;
 }

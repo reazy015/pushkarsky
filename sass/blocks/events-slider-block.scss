@@ -1,0 +1,32 @@
+.event-slider {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.event-slider-item {
+  max-width: 100%;
+  height: auto;
+  margin: 25px;
+}
+.event-slider .slick-dots {
+  @include list-reset;
+  display: flex;
+  justify-content: center;
+}
+.event-slider .slick-dots li {
+  margin-right: 10px;
+}
+.event-slider .slick-dots li button {
+  width: 10px;
+  height: 10px;
+  color: transparent;
+  font-size: 0;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.slick-active button{
+  background-color: $basic-blue;
+}
+.event-slider .slick-dots li button:focus {
+  outline: none;
+}

@@ -1,0 +1,20 @@
+.events-specials {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 70px;
+}
+.events-specials-icon-wrapper {
+  width: 60px;
+  height: 60px;
+  margin-right: 44px;
+}
+.events-specials-item {
+  display: flex;
+  align-items: center;
+}
+.events-specials-item__header {
+  font-family: "Cambria", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: $basic-blue;
+}

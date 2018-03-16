@@ -75,6 +75,13 @@
     font-size: 0.8em;
   }
 
+  &--events {
+    display: block;
+    font-size: 0.8em;
+    max-width: 300px;
+    margin: auto;
+  }
+
   &:focus {
     outline: none
   }
