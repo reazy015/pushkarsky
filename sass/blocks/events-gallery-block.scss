@@ -50,6 +50,16 @@
   font-size: 16px;
   font-weight: normal;
   color: $basic-blue;
+
+  @media (min-width: $tablet-sm-width) {
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-left: 118px;
+    padding-right: 118px;
+  }
 }
 .events-description__text {
   line-height: 1.6;

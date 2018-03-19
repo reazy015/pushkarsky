@@ -2,6 +2,21 @@
   padding-left: 10px;
   padding-right: 10px;
   padding-bottom: 70px;
+
+  
+  @media (min-width: $tablet-sm-width) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 56px;
+    padding-right: 56px;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-right: 118px;
+    padding-left: 118px;
+    flex-wrap: nowrap;
+  }
 }
 .events-specials-icon-wrapper {
   width: 60px;
@@ -11,10 +26,25 @@
 .events-specials-item {
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-lg-width) {
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: center;
+  }
 }
 .events-specials-item__header {
   font-family: "Cambria", "Arial", sans-serif;
   font-size: 18px;
   font-weight: normal;
   color: $basic-blue;
+}
+.events-specials-item--fr {
+  @media (min-width: $tablet-sm-width) {
+    flex: 1 0 50%;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    flex: 1 1 auto;
+  }
 }
