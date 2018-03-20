@@ -16,6 +16,7 @@
   padding-right: 10px;
 }
 .main-nav-list-item {
+  transition: box-shadow .3s;
   @media (min-width: $tablet-lg-width) {
     flex: 1 1 auto;
     text-align: center;
@@ -24,6 +25,10 @@
     &:last-of-type {
       border-right: none;
     }
+  }
+
+  &:hover {
+    box-shadow: inset 0px 0px 38px -2px rgba(0,0,0,0.75);
   }
 }
 .main-nav-list-item__link {

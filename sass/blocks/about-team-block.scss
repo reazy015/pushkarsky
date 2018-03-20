@@ -4,6 +4,24 @@
   @media (min-width: $tablet-xs-width) {
     display: flex;
   }
+
+  @media (min-width: $tablet-lg-width) {
+    background-image: url(/img/bg/shef-desktop.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 20%;
+    padding-top: 215px;
+    padding-bottom: 75px;
+    display: block;
+  }
+}
+.rest-about-team-info {
+  @media (min-width: $tablet-lg-width) {
+    position: relative;
+    max-width: 593px;
+    margin-left: auto;
+  }
 }
 .rest-about-team-pos {
   font-family: "Calibri", "Arial", sans-serif;
@@ -21,9 +39,15 @@
   color: $basic-blue;
   font-family: "Calibri", "Arial", sans-serif;
   line-height: 1.8;
+  background-color: $basic-white;
 
   @media (min-width: $tablet-xs-width) {
     order: 3;
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-left: 75px;
+    padding-right: 75px;
   }
 }
 .name-container {
@@ -32,17 +56,56 @@
   padding-bottom: 40px;
   text-align: center;
   color: $basic-white;
+  transform: translateY(-257px);
 
   @media (min-width: $tablet-xs-width) {
-    order: 21;
+    transform: translateY(0px);
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    padding-left: 75px;
+    padding-top: 93px;
+    text-align: left;
   }
 }
 .photo-container {
   height: 280px;
-  width: 100%;
-  background-repeat: no-repeat;
+  background-image: url(/img/bg/shef.png);
+  background-size: cover;
+  background-position: 80% 20%;
+  transform: translateY(150px);
+
+
 
   @media (min-width: $tablet-xs-width) {
-    order: 1;
+    background-image: url(/img/bg/shef-tablet.png);
+    background-size: cover;
+    background-position: 0% 20%;
+    height: auto;
+    flex: 1 0 50%;
+    transform: translateY(0px);
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    background-image: none;
+    display: none;
+  }
+}
+.photo-container__img {
+  width: 100%;
+  height: auto;
+}
+.rest-about-team-info-decor {
+  display: none;
+
+  @media (min-width: $tablet-lg-width) {
+    display: block;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 1px solid $basic-border-grey;
+    opacity: 0.6;
   }
 }

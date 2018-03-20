@@ -10,6 +10,7 @@
   }
 }
 .geo-info {
+
   @media (min-width: $tablet-sm-width) {
     position: absolute;
     bottom: 30px;
@@ -24,6 +25,7 @@
   @include list-reset;
   display: flex;
   border-bottom: 1px solid $basic-border-grey;
+
 
   @media (min-width: $tablet-sm-width) {
     padding-left: 15px;

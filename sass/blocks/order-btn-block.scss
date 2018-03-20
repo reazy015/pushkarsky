@@ -10,6 +10,11 @@
   border: none;
   display: none;
   cursor: pointer;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $basic-red;
+  }
 
   &--header {
     display: none;
@@ -67,7 +72,8 @@
 
   &--article {
     display: block;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    margin-right: auto!important;
   }
 
   &--callback-block {
@@ -76,6 +82,13 @@
   }
 
   &--events {
+    display: block;
+    font-size: 0.8em;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  &--news-item {
     display: block;
     font-size: 0.8em;
     max-width: 300px;
