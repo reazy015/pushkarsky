@@ -98,11 +98,15 @@
   margin-bottom: 27px;
   font-family: "Calibri", "Arial", sans-serif;
 }
-.news-article__more {
+.news-article-more {
   font-family: "Calibri", "Arial", sans-serif;
   color: $basic-submit-red;
   cursor: pointer;
   z-index: 10;
+}
+.news-article-more__link {
+  @include link-reset;
+  color: $basic-submit-red;
 }
 .news-learn-more {
   padding-top: 50px;

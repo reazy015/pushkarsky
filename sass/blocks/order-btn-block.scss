@@ -95,6 +95,13 @@
     margin: auto;
   }
 
+  &--popup {
+    display: block;
+    font-size: 0.8em;
+    max-width: 230px;
+    margin: auto;
+  }
+
   &:focus {
     outline: none
   }

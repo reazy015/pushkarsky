@@ -1,3 +1,24 @@
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  @media (min-width: $tablet-lg-width) {
+    justify-content: center;
+  }
+}
+.news__header {
+  text-align: center;
+  margin-top: 75px;
+}
+.news-decor {
+  text-align: center;
+  margin-top: 52px;
+  margin-bottom: 52px;
+}
+.news {
+  max-width: 1420px;
+  margin: auto;
+}
 .news-item {
   @media (min-width: $tablet-sm-width) {
     background-color: $basic-layout-bg;

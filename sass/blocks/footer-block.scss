@@ -28,6 +28,14 @@
 .footer-nav-list-item {
   margin-right: 61px;
   margin-bottom: 27px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+.footer-nav-list-item__link {
+  @include link-reset;
+  color: $basic-white;
 }
 .footer-logo-link {
   display: block;

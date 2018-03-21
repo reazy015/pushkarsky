@@ -6,6 +6,11 @@
   max-width: 100%;
   height: auto;
   margin: 25px;
+
+  @media (min-width: $tablet-lg-width) {
+    max-height: 465px!important;
+    max-width: 867px!important;
+  }
 }
 .event-slider .slick-dots {
   @include list-reset;

@@ -67,6 +67,7 @@
   
   @media (min-width: $tablet-lg-width) {
     display: flex;
+    justify-content: center;
   }
 }
 .about-inst-gallery-item {
@@ -78,6 +79,10 @@
   @media (min-width: 542px) {
     float: none;
     display: inline-block;
+  }
+
+  @media (min-width: $tablet-sm-width) {
+    max-width: 13.9%;
   }
 }
 .about-inst-gallery__img {

@@ -16,6 +16,7 @@
   padding-right: 10px;
 }
 .main-nav-list-item {
+  position: relative;
   transition: box-shadow .3s;
   @media (min-width: $tablet-lg-width) {
     flex: 1 1 auto;
@@ -28,7 +29,9 @@
   }
 
   &:hover {
-    box-shadow: inset 0px 0px 38px -2px rgba(0,0,0,0.75);
+    @media (min-width: $tablet-lg-width) {
+      box-shadow: inset 0px 0px 38px -2px rgba(0,0,0,0.75);
+    }
   }
 }
 .main-nav-list-item__link {
@@ -39,4 +42,22 @@
   font-family: "Cambria", "Arial", sans-serif;
   text-transform: uppercase;
   color: $basic-white;
+
+  @media (min-width: $tablet-sm-width) {
+    position: relative;
+  }
+}
+.main-nav-list-item__link span {
+  position: absolute;
+  display: block;
+  width: 0%;
+  height: 1px;
+  background-color: $basic-white;
+  bottom: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width .3s;
+}
+.main-nav-list-item:hover > .main-nav-list-item__link span {
+  width: 50%;
 }

@@ -6,7 +6,7 @@
   }
 
   @media (min-width: $tablet-lg-width) {
-    background-image: url(/img/bg/shef-desktop.png);
+    background-image: url(../img/bg/shef-desktop.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -70,7 +70,7 @@
 }
 .photo-container {
   height: 280px;
-  background-image: url(/img/bg/shef.png);
+  background-image: url(../img/bg/shef.png);
   background-size: cover;
   background-position: 80% 20%;
   transform: translateY(150px);
@@ -78,7 +78,7 @@
 
 
   @media (min-width: $tablet-xs-width) {
-    background-image: url(/img/bg/shef-tablet.png);
+    background-image: url(../img/bg/shef-tablet.png);
     background-size: cover;
     background-position: 0% 20%;
     height: auto;

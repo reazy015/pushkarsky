@@ -7,6 +7,10 @@
   @media (min-width: $tablet-xs-width) {
     flex-wrap: nowrap;
   }
+
+  @media (min-width: 1465px) {
+    transform: translateX(-12%);
+  }
 }
 .events-gallery-item {
   min-height: 145px;
@@ -22,8 +26,9 @@
     min-height: 176px;
   }
 
-  @media (min-width: $tablet-xs-width) {
-
+  @media (min-width: 1465px) {
+    flex: 0 0 355px;
+    height: 355px;
   }
 }
 .events-gallery__header {

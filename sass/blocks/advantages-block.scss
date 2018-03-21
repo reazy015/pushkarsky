@@ -1,6 +1,10 @@
 .advantages {
   padding-top: 12px;
   padding-bottom: 12px;
+
+  @media (min-width: $tablet-sm-width) {
+    padding-top: 77px;
+  }
 }
 .advantages-item {
   display: flex;
@@ -12,25 +16,37 @@
   font-family: "Cambria", "Arial", sans-serif;
   font-size: 18px;
   color: $basic-white;
+  height: 0;
+
+  animation-name: showOnScroll;
+  animation-duration: .5s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+
 
   &--place-amount {
-    background-image: url(/img/advantages-block/main-2-1.jpg);
+    background-image: url(../img/advantages-block/main-2-1.jpg);
+    animation-delay: .1s;
   }
 
   &--geo {
-    background-image: url(/img/advantages-block/main-2-2.jpg);
+    background-image: url(../img/advantages-block/main-2-2.jpg);
+    animation-delay: .2s;
   }
 
   &--cusine {
-    background-image: url(/img/advantages-block/main-2-3.jpg);
+    background-image: url(../img/advantages-block/main-2-3.jpg);
+    animation-delay: .3s;
   }
 
   &--atmo {
-    background-image: url(/img/advantages-block/main-2-4.jpg);
+    background-image: url(../img/advantages-block/main-2-4.jpg);
+    animation-delay: .4s;
   }
 
   &--wifi {
-    background-image: url(/img/advantages-block/main-2-5.jpg);
+    background-image: url(../img/advantages-block/main-2-5.jpg);
+    animation-delay: .5s;
   }
 
   @media (min-width: $tablet-xs-width) {
@@ -48,15 +64,17 @@
 
   @media (min-width: $tablet-lg-width) {
     flex-direction: column;
-    flex: 1 1 20%;
+    flex: 1 1 245px;
     margin-right: 2%;
     text-align: center;
+    min-height: 245px;
+    justify-content: space-around;
 
     &:nth-of-type(2n) {
       margin-right: 2%;
     }
     &:last-of-type  {
-      flex: 1 1 20%;
+      flex: 1 1 245px;
       margin-right: 0;
     }
   }
@@ -69,4 +87,9 @@
 .advantages-item-icon__img {
   max-width: 100%;
   height: auto;
+}
+
+@keyframes showOnScroll {
+  from { min-height: 0;}
+  to {  min-height: 245px;}
 }

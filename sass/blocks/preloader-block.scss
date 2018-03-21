@@ -1,0 +1,22 @@
+.preloader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $basic-white;
+  display: block;
+  transition: opacity .5s;
+}
+.preloader-img-wrapper {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.preloader-info-percent {
+  padding-left: 15px;
+}

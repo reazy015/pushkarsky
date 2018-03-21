@@ -6,6 +6,10 @@
     display: block;
     flex: 0 1 180px;
   }
+
+  @media (min-width: $tablet-lg-width) {
+    flex: 0 1 280px;
+  }
 }
 .footer-sub-form__input {
   background-color: transparent;
@@ -42,4 +46,8 @@
   font-size: 0.8em;
   padding: 10px 0px;
   color: $basic-white;
+
+  @media (min-width: $tablet-lg-width) {
+    width: 234px;
+  }
 }

@@ -17,11 +17,20 @@
     padding-left: 118px;
     flex-wrap: nowrap;
   }
+
+  @media (min-width: 1200px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 .events-specials-icon-wrapper {
   width: 60px;
   height: 60px;
   margin-right: 44px;
+
+  @media (min-width: $tablet-lg-width) {
+    margin-right: 0;
+  }
 }
 .events-specials-item {
   display: flex;
@@ -38,6 +47,10 @@
   font-size: 18px;
   font-weight: normal;
   color: $basic-blue;
+
+  @media (min-width: $tablet-lg-width) {
+    text-align: center;
+  }
 }
 .events-specials-item--fr {
   @media (min-width: $tablet-sm-width) {

@@ -40,6 +40,10 @@
   @media (min-width: $tablet-sm-width) {
     flex: 0 1 330px;
   }
+
+  @media (min-width: $tablet-lg-width) {
+    flex: 0 1 500px;
+  }
 }
 .footer-rating-item {
   flex: 0 1 150px;

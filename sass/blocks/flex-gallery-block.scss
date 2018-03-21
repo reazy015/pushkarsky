@@ -47,6 +47,10 @@ $section-rotate: 30;
   max-height: 627px;
   min-width: 320px;
   overflow: hidden;
+
+  @media (min-width: $tablet-lg-width) {
+    max-height: 93vh;
+  }
 }
 .flex-gallery {
   display: flex;
@@ -55,6 +59,21 @@ $section-rotate: 30;
   height: 100%;
   overflow: hidden;
   transform: translateX(-30%);
+
+  @media (min-width: $tablet-xs-width) {
+    width: 160%;
+    transform: translateX(-17%);
+  }
+
+  @media (min-width: $tablet-lg-width) {
+    width: 200%;
+    transform: translateX(-25%);
+  }
+
+  @media (min-width: 1280px) {
+    width: 175%;
+    transform: translateX(-20%);
+  }
 }
 .flex-gallery-item {
   position: relative;
@@ -64,6 +83,10 @@ $section-rotate: 30;
   overflow: hidden;
   margin-left: -2px;
   transition: flex-grow .3s;
+
+  @media (min-width: $tablet-lg-width) {
+    transform: skewX(-50deg);
+  }
 
 
   &:hover {
@@ -80,6 +103,11 @@ $section-rotate: 30;
     width: 400%;
     height: 100%;
     transform: skewX(30deg);
+
+    @media (min-width: $tablet-lg-width) {
+      transform: skewX(50deg);
+      width: 300%;
+    }
   }
 
   &:after {
@@ -89,37 +117,61 @@ $section-rotate: 30;
     left: -100%;
     width: 400%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
+
+    @media (min-width: $tablet-lg-width) {
+
+    }
   }
 
   &:nth-child(1):before {
-    background-image: url(/img/bg/flex-gallery-item1.jpg);
+    background-image: url(../img/bg/flex-gallery-item1.jpg);
     background-size: cover;
     background-position: center center;
+
+    @media (min-width: $tablet-lg-width) {
+      left: -50%;
+    }
   }
 
   &:nth-child(2):before {
-    background-image: url(/img/bg/flex-gallery-item3.jpg);
+    background-image: url(../img/bg/flex-gallery-item3.jpg);
     background-size: cover;
     background-position: center center;
+
+    @media (min-width: $tablet-lg-width) {
+      left: -30%;
+    }
   }
 
   &:nth-child(3):before {
-    background-image: url(/img/bg/flex-gallery-item2.jpg);
+    background-image: url(../img/bg/flex-gallery-item2.jpg);
     background-size: cover;
     background-position: center center;
+
+    @media (min-width: $tablet-lg-width) {
+
+    }
   }
 
   &:nth-child(4):before {
-    background-image: url(/img/bg/flex-gallery-item5.jpg);
+    background-image: url(../img/bg/flex-gallery-item5.jpg);
     background-size: cover;
     background-position:  center center;
+
+    @media (min-width: $tablet-lg-width) {
+      left: -150%;
+    }
   }
 
   &:nth-child(5):before {
-    background-image: url(/img/bg/flex-gallery-item4.jpg);
+    background-image: url(../img/bg/flex-gallery-item4.jpg);
     background-size: cover;
     background-position: center center;
+
+    @media (min-width: $tablet-lg-width) {
+      left: -180%;
+    }
   }
 }
 //.flex-gallery-item__unit {
