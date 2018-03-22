@@ -84,8 +84,19 @@
   @media (min-width: $tablet-sm-width) {
     max-width: 13.9%;
   }
+
+  @media (min-width: $tablet-lg-width) {
+    width: 200px;
+    height: 200px;
+    max-width: 200px;
+  }
 }
 .about-inst-gallery__img {
   max-width: 100%;
   height: auto;
+
+  @media (min-width: $tablet-lg-width) {
+    width: 100%;
+    height: auto;
+  }
 }

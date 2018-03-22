@@ -28,13 +28,18 @@
   height: 60px;
   margin-right: 44px;
 
-  @media (min-width: $tablet-lg-width) {
+  @media (min-width: $tablet-sm-width) {
     margin-right: 0;
   }
 }
 .events-specials-item {
   display: flex;
   align-items: center;
+
+  @media (min-width: $tablet-sm-width) {
+    flex-direction: column;
+    text-align: center;
+  }
 
   @media (min-width: $tablet-lg-width) {
     flex-direction: column;

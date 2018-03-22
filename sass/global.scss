@@ -42,7 +42,11 @@
   align-items: center;
 }
 .no-scroll {
+  position: fixed;
   overflow: hidden;
+}
+.no-scroll--popup {
+  position: static;
 }
 .clearfix:after {
   display: table;

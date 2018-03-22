@@ -16,12 +16,13 @@
   font-family: "Cambria", "Arial", sans-serif;
   font-size: 18px;
   color: $basic-white;
-  height: 0;
 
-  animation-name: showOnScroll;
-  animation-duration: .5s;
-  animation-fill-mode: both;
-  animation-timing-function: linear;
+
+  @media (min-width: $tablet-lg-width) {
+    animation-duration: .5s;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+  }
 
 
   &--place-amount {
@@ -32,6 +33,11 @@
   &--geo {
     background-image: url(../img/advantages-block/main-2-2.jpg);
     animation-delay: .2s;
+
+    @media (max-width: $tablet-sm-width) {
+      background-image: url(../img/advantages-block/main-2-2tb.jpg);
+
+    }
   }
 
   &--cusine {
@@ -89,6 +95,9 @@
   height: auto;
 }
 
+.slideShow {
+  animation-name: showOnScroll;
+}
 @keyframes showOnScroll {
   from { min-height: 0;}
   to {  min-height: 245px;}

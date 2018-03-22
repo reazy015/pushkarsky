@@ -1,21 +1,24 @@
 .event-slider {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+
 }
 .event-slider-item {
   max-width: 100%;
   height: auto;
   margin: 25px;
 
-  @media (min-width: $tablet-lg-width) {
-    max-height: 465px!important;
-    max-width: 867px!important;
+  @media (max-width: $tablet-sm-width) {
+    margin: 0;
   }
 }
 .event-slider .slick-dots {
   @include list-reset;
   display: flex;
   justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 .event-slider .slick-dots li {
   margin-right: 10px;
@@ -28,9 +31,10 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  background-color: $basic-slick-dot;
 }
 .slick-active button{
-  background-color: $basic-blue;
+  background-color: $basic-blue!important;
 }
 .event-slider .slick-dots li button:focus {
   outline: none;

@@ -4,25 +4,20 @@ $(document).ready(function (){
        centerMode: true,
        arrows: false,
        dots: true,
-       centerPadding: '260px',
+       centerPadding: '18%',
        slidesToShow: 1,
        responsive: [
            {
-               breakpoint: 768,
+               breakpoint: 1024,
                settings: {
-                   arrows: false,
-                   centerMode: true,
-                   centerPadding: '40px',
-                   slidesToShow: 1
+                   centerPadding: '5%'
                }
            },
            {
-               breakpoint: 480,
+               breakpoint: 568,
                settings: {
-                   arrows: false,
                    centerMode: false,
-                   centerPadding: '40px',
-                   slidesToShow: 1
+                   centerPadding: '0%'
                }
            }
        ]
@@ -34,25 +29,20 @@ $(document).ready(function () {
        centerMode: true,
        arrows: false,
        dots: true,
-       centerPadding: '260px',
+       centerPadding: '18%',
        slidesToShow: 1,
        responsive: [
            {
-               breakpoint: 768,
+               breakpoint: 1024,
                settings: {
-                   arrows: false,
-                   centerMode: true,
-                   centerPadding: '40px',
-                   slidesToShow: 1
+                   centerPadding: '5%'
                }
            },
            {
-               breakpoint: 480,
+               breakpoint: 568,
                settings: {
-                   arrows: false,
                    centerMode: false,
-                   centerPadding: '40px',
-                   slidesToShow: 1
+                   centerPadding: '0%'
                }
            }
        ]

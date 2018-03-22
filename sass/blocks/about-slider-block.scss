@@ -27,6 +27,7 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  background-color: $basic-slick-dot;
 }
 .slick-active button{
   background-color: $basic-blue;
@@ -37,9 +38,6 @@
 .rest-about-slider__img {
   @media (min-width: $tablet-xs-width) {
     margin: 25px;
-  }
-  @media (min-width: $tablet-lg-width) {
-    max-height: 465px!important;
   }
 }
 .rest-about-slider .slick-arrow {

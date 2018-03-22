@@ -56,10 +56,27 @@
   font-size: 1em;
   text-transform: uppercase;
   color: $basic-blue;
+
+  &--active {
+    position: relative;
+  }
+}
+.header-nav__link--active > span {
+  @media (min-width: $tablet-lg-width) {
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 1px;
+    background-color: $basic-submit-red;
+  }
+
 }
 .body--about .header-nav__link {
   @media (min-width: $tablet-lg-width) {
     color: $basic-white;
+    display: block;
   }
 }
 .header-nav-btn {

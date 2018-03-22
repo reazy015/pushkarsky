@@ -60,4 +60,8 @@
 }
 .main-nav-list-item:hover > .main-nav-list-item__link span {
   width: 50%;
+
+  @media (max-width: $tablet-lg-width) {
+    width: 100%;
+  }
 }
