@@ -82,6 +82,10 @@
   @include list-reset;
   display: flex;
   justify-content: center;
+
+  @media (min-width: $tablet-sm-width) {
+    justify-content: flex-start;
+  }
 }
 .footer-contacts-socials-item {
   margin-right: 15px;
