@@ -1,23 +1,17 @@
 
 $(document).ready(function (){
    $('.event-slider').slick({
-       centerMode: true,
+       mobileFirst: true,
+       centerMode: false,
        arrows: false,
        dots: true,
-       centerPadding: '18%',
        slidesToShow: 1,
        responsive: [
            {
                breakpoint: 1024,
                settings: {
-                   centerPadding: '5%'
-               }
-           },
-           {
-               breakpoint: 568,
-               settings: {
-                   centerMode: false,
-                   centerPadding: '0%'
+                   centerMode: true,
+                   centerPadding: '18%'
                }
            }
        ]
@@ -26,23 +20,17 @@ $(document).ready(function (){
 
 $(document).ready(function () {
    $('.rest-about-slider').slick({
-       centerMode: true,
+       mobileFirst: true,
+       centerMode: false,
        arrows: false,
        dots: true,
-       centerPadding: '18%',
        slidesToShow: 1,
        responsive: [
            {
                breakpoint: 1024,
                settings: {
-                   centerPadding: '5%'
-               }
-           },
-           {
-               breakpoint: 568,
-               settings: {
-                   centerMode: false,
-                   centerPadding: '0%'
+                   centerMode: true,
+                   centerPadding: '18%'
                }
            }
        ]

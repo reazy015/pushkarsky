@@ -16,7 +16,7 @@ function init () {
     var myPlacemark = new ymaps.Placemark(myContactsMap.getCenter(),{},{
 
         iconLayout: 'default#image',
-        iconImageHref: '/img/icons/map_point.svg',
+        iconImageHref: './img/icons/map_point.svg',
         iconImageSize: [40, 65],
         iconImageOffset: [-5, -60]
     });

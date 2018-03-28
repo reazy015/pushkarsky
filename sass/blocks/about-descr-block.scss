@@ -6,6 +6,10 @@
 }
 .about--padding {
   padding-top: 80px;
+
+  @media (max-width: $tablet-xs-width) {
+    padding-top: 0;
+  }
 }
 .about-container {
   padding-bottom: 75px;

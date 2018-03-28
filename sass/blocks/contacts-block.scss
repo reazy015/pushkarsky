@@ -28,13 +28,20 @@
   }
 }
 .contacts .geo-info {
-  position: absolute;
-  bottom: 10%;
-  left: 50%;
-  z-index: 50;
-  transform: translate(0%);
-  transform: translateX(-50%);
+  @media (min-width: $tablet-sm-width) {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    z-index: 50;
+    transform: translate(0%);
+    transform: translateX(-50%);
+  }
 }
 .contacts .container--callback {
   flex-direction: column;
+}
+.contacts .geo-info-wrapper {
+  @media (max-width: $tablet-sm-width) {
+    padding-bottom: 20px;
+  }
 }

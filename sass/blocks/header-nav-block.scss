@@ -1,9 +1,9 @@
 .header-nav {
-  display: block;
+  display: none;
   position: absolute;
-  top: 100%;
   left: 0;
   right: 0;
+  top: 100%;
   background-color: $basic-white;
   padding-left: 50px;
   padding-right: 50px;
@@ -12,9 +12,23 @@
   transition: transform .3s ease-in-out;
 
   @media (min-width: $tablet-xs-width) {
-    display: flex;
+    display: none;
     flex-wrap: wrap;
   }
+  
+  &--open {
+    display: flex;
+    animation-name: fadeInRight;
+    animation-duration: .3s;
+    animation-timing-function: ease-in;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+}
+.header-nav--open .order-btn--nav {
+  margin-bottom: 50%!important;
 }
 .body--about .header-nav {
   @media (min-width: $tablet-lg-width) {
@@ -118,6 +132,7 @@
   }
 }
 .header-nav-tablet {
+  position: relative;
   display: none;
   text-align: center;
 
@@ -134,6 +149,18 @@
 .header-nav-tablet__logo {
   width: 100%;
   height: auto;
+
+  @media (min-width: $tablet-sm-width) {
+    width: 75%;
+  }
+}
+.header-nav-tablet__decor {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  bottom: 10%;
+  width: 1px;
+  background-color: $basic-border-grey;
 }
 .header-nav-tablet-socials {
   @include list-reset;

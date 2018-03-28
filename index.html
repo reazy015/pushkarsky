@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="format-detection" content="telephone=no">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,6 +11,8 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="apple-touch-icon" href="icon.png">
         <!-- Place favicon.ico in the root directory -->
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/hover-min.css">
         <link rel="stylesheet" href="css/fontawesome-all.min.css">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/style.css">
@@ -41,6 +44,7 @@
                     <div class="header-nav-tablet__phone">+7 (921) 943-38-38</div>
                     <div class="header-nav-tablet__address">Большая Пушкарская ул., 38</div>
                     <div class="header-nav-tablet__schedule">ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-СБ 12:00 - 00:00</div>
+                    <div class="header-nav-tablet__decor"></div>
                 </div>
                 <ul class="header-nav-list">
                     <li class="header-nav-item"><a href="index.html" class="header-nav__link">Главная <span></span></a></li>
@@ -75,9 +79,9 @@
                         <div class="gallery-info__phone">+7 (921) 943-38-38</div>
 
                         <ul class="gallery-info-socials">
-                            <li class="gallery-info-socials__item"><i class="fab fa-vk"></i></li>
-                            <li class="gallery-info-socials__item"><i class="fab fa-facebook-f"></i></li>
-                            <li class="gallery-info-socials__item"><i class="fab fa-instagram"></i></li>
+                            <li class="gallery-info-socials__item"><a href="https://vk.com/pushkarskispb"><i class="fab fa-vk"></i></li>
+                            <li class="gallery-info-socials__item"><a href="https://www.facebook.com/pushkarskispb/"><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="gallery-info-socials__item"><a href="https://www.instagram.com/pushkarskispb/"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
 
@@ -167,26 +171,27 @@
                     <div class="about-inst">
                         <h3 class="about-inst__header">Следите за обновлениями в Instagram</h3>
                         <a href="#" class="about-inst__link">@pushkarskispb</a>
-                        <div class="about-inst-gallery clearfix">
-                            <div class="about-inst-gallery-item">
-                                <img src="img/about-block/about-gallery-img1.png" alt="inst-gallery-img" class="about-inst-gallery__img">
-                            </div>
-                            <div class="about-inst-gallery-item">
-                                <img src="img/about-block/about-gallery-img2.png" alt="inst-gallery-img" class="about-inst-gallery__img">
-                            </div>
-                            <div class="about-inst-gallery-item">
-                                <img src="img/about-block/about-gallery-img3.png" alt="inst-gallery-img" class="about-inst-gallery__img">
-                            </div>
-                            <div class="about-inst-gallery-item">
-                                <img src="img/about-block/about-gallery-img4.png" alt="inst-gallery-img" class="about-inst-gallery__img">
-                            </div>
-                            <div class="about-inst-gallery-item">
-                                <img src="img/about-block/about-gallery-img5.png" alt="inst-gallery-img" class="about-inst-gallery__img">
-                            </div>
-                            <div class="about-inst-gallery-item">
-                                <img src="img/about-block/about-gallery-img-mini.png" alt="inst-gallery-img" class="about-inst-gallery__img">
-                            </div>
-                        </div>
+                        <!--<div class="about-inst-gallery clearfix">-->
+                            <!--<div class="about-inst-gallery-item">-->
+                                <!--<img src="img/about-block/about-gallery-img1.png" alt="inst-gallery-img" class="about-inst-gallery__img">-->
+                            <!--</div>-->
+                            <!--<div class="about-inst-gallery-item">-->
+                                <!--<img src="img/about-block/about-gallery-img2.png" alt="inst-gallery-img" class="about-inst-gallery__img">-->
+                            <!--</div>-->
+                            <!--<div class="about-inst-gallery-item">-->
+                                <!--<img src="img/about-block/about-gallery-img3.png" alt="inst-gallery-img" class="about-inst-gallery__img">-->
+                            <!--</div>-->
+                            <!--<div class="about-inst-gallery-item">-->
+                                <!--<img src="img/about-block/about-gallery-img4.png" alt="inst-gallery-img" class="about-inst-gallery__img">-->
+                            <!--</div>-->
+                            <!--<div class="about-inst-gallery-item">-->
+                                <!--<img src="img/about-block/about-gallery-img5.png" alt="inst-gallery-img" class="about-inst-gallery__img">-->
+                            <!--</div>-->
+                            <!--<div class="about-inst-gallery-item">-->
+                                <!--<img src="img/about-block/about-gallery-img-mini.png" alt="inst-gallery-img" class="about-inst-gallery__img">-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <!-- LightWidget WIDGET --><script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script><iframe src="//lightwidget.com/widgets/3cf691c664405e63b656cdef5971b9e3.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
                     </div>
                 </div>
             </section>
@@ -195,35 +200,57 @@
                 <div class="geo__map" id="map"></div>
                 <div class="geo-info">
                     <ul class="geo-info-panel">
-                        <li class="geo-info-panel__item">
+                        <li class="geo-info-panel__item" data-target="address">
                             <svg role="geo-icon" class="geo-icon" width="14" height="18"  viewbox="0 0 97.7 97.7">
                                 <use xlink:href="img/sprite/sprite.svg#002-placeholder-filled-point"></use>
                             </svg>
                         </li>
-                        <li class="geo-info-panel__item geo-info-panel__item--active">
+                        <li class="geo-info-panel__item geo-info-panel__item--active" data-target="mail">
                             <svg role="geo-icon" class="geo-icon  geo-icon--active" width="14" height="18"  viewbox="0 0 395 395">
                                 <use xlink:href="img/sprite/sprite.svg#003-email" ></use>
                             </svg>
                         </li>
-                        <li class="geo-info-panel__item">
+                        <li class="geo-info-panel__item" data-target="phone">
                             <svg role="geo-icon" class="geo-icon" width="18" height="18" viewbox="0 0 480.6 480.6">
                                 <use xlink:href="img/sprite/sprite.svg#004-technology"></use>
                             </svg>
                         </li>
-                        <li class="geo-info-panel__item">
+                        <li class="geo-info-panel__item" data-target="socials">
                             <svg role="geo-icon" class="geo-icon" width="15" height="17" viewbox="0 0 15 17">
                                 <use xlink:href="img/sprite/sprite.svg#005-network"></use>
                             </svg>
                         </li>
-                        <li class="geo-info-panel__item">
+                        <li class="geo-info-panel__item" data-target="time">
                             <svg role="geo-icon" class="geo-icon" width="16" height="16" viewbox="0 0 432.1 432.1">
                                 <use xlink:href="img/sprite/sprite.svg#001-time"></use>
                             </svg>
                         </li>
                     </ul>
-                    <div class="geo-info-item">
-                        <h5 class="geo-info-item__name">E-mail</h5>
-                        <div class="geo-info-item__content">pushkarskispb@gmail.com</div>
+                    <div class="geo-info-wrapper">
+                        <div class="geo-info-item geo-info-item--active" data-target="mail">
+                            <h5 class="geo-info-item__name">E-mail</h5>
+                            <div class="geo-info-item__content">pushkarskispb@gmail.com</div>
+                        </div>
+                        <div class="geo-info-item" data-target="address">
+                            <h5 class="geo-info-item__name">Адрес</h5>
+                            <div class="geo-info-item__content">Большая Пушкарская ул., 38</div>
+                        </div>
+                        <div class="geo-info-item" data-target="phone">
+                            <h5 class="geo-info-item__name">Телефон</h5>
+                            <div class="geo-info-item__content">+7 (921) 943-38-38</div>
+                        </div>
+                        <div class="geo-info-item" data-target="socials">
+                            <h5 class="geo-info-item__name">Мы в социальных сетях</h5>
+                            <ul class="gallery-info-socials gallery-info-socials--info">
+                                <li class="gallery-info-socials__item"><a href="https://vk.com/pushkarskispb "><i class="fab fa-vk"></i></a></li>
+                                <li class="gallery-info-socials__item"><a href="https://www.facebook.com/pushkarskispb/"><i class="fab fa-facebook-f"></i></a></li>
+                                <li class="gallery-info-socials__item"><a href="https://www.instagram.com/pushkarskispb/"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="geo-info-item" data-target="time">
+                            <h5 class="geo-info-item__name">Время работы: </h5>
+                            <div class="gallery-info__schedule gallery-info__schedule--info" >ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-СБ 12:00 - 00:00</div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -292,13 +319,13 @@
                         <div class="footer-contacts__phone">+7 (921) 943-38-38</div>
                         <ul class="footer-contacts-socials">
                             <li class="footer-contacts-socials-item">
-                                <a href="" class="footer-contacts-socials__link"><i class="fab fa-vk"></i></a>
+                                <a href="https://vk.com/pushkarskispb" class="footer-contacts-socials__link"><i class="fab fa-vk"></i></a>
                             </li>
                             <li class="footer-contacts-socials-item">
-                                <a href="" class="footer-contacts-socials__link"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.facebook.com/pushkarskispb/" class="footer-contacts-socials__link"><i class="fab fa-facebook-f"></i></a>
                             </li>
                             <li class="footer-contacts-socials-item">
-                                <a href="" class="footer-contacts-socials__link"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/pushkarskispb/" class="footer-contacts-socials__link"><i class="fab fa-instagram"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -424,11 +451,13 @@
 
 
         <script src="js/vendor/svg4everybody.min.js"></script>
+        <script src="js/vendor/instafeed.min.js"></script>
         <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+        <script src="js/instafeedConfig.js"></script>
         <script src="js/mobileNavBlock.js"></script>
         <script src="js/yandexMap.js"></script>
         <script src="js/popupModule.js"></script>
-        <!--<script src="js/geoInfoPanel.js"></script>-->
+        <script src="js/geoInfoPanel.js"></script>
         <!--<script src="js/sitePreloader.js"></script>-->
         <!--<script src="js/scrollBlockAnimation.js"></script>-->
     </body>

@@ -23,6 +23,11 @@
   background-color: $basic-submit-red;
   border: none;
   cursor: pointer;
+  transition: background-color .3s;
+
+  &:hover {
+    background-color: $basic-red;
+  }
 }
 .footer-sub-form__submit--icon {
   position: relative;
@@ -36,7 +41,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-image: url(/img/icons/submit.png);
+    background-image: url(../img/icons/submit.png);
     background-repeat: no-repeat;
     background-position: center center;
   }

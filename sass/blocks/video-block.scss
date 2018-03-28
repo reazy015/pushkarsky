@@ -3,5 +3,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  height: 100vh;
+  height: 90.5vh;
+}
+.video-container iframe {
+  pointer-events: auto;
 }

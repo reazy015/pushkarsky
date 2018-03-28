@@ -42,14 +42,17 @@
   align-items: center;
 }
 .no-scroll {
-  position: fixed;
   overflow: hidden;
 }
 .no-scroll--popup {
   position: static;
+  overflow: hidden;
 }
 .clearfix:after {
   display: table;
   content: '';
   clear: both;
+}
+.hidden {
+  display: none;
 }

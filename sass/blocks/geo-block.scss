@@ -11,6 +11,7 @@
 }
 .geo-info {
 
+
   @media (min-width: $tablet-sm-width) {
     position: absolute;
     bottom: 30px;
@@ -20,6 +21,9 @@
     padding-bottom: 55px;
     background-color: $basic-white;
   }
+}
+.geo-info-wrapper {
+  overflow: hidden;
 }
 .geo-info-panel {
   @include list-reset;
@@ -41,6 +45,7 @@
   height: 60px;
   align-items: center;
   justify-content: center;
+  transition: background-color .2s;
 }
 .geo-info-panel__item--active {
   position: relative;
@@ -74,8 +79,19 @@
 .geo-info-item {
   font-family: "Calibri", "Arial", sans-serif;
   text-align: center;
+  display: none;
+  
+  &--active {
+    display: block;
+    animation-name: fadeInRight;
+    animation-fill-mode: both;
+    animation-duration: .3s;
+    animation-timing-function: linear;
+  }
 }
 .geo-info-item__name {
   font-size: 1.2em;
   font-weight: bold;
 }
+
+

@@ -10,9 +10,11 @@
   border: none;
   display: none;
   cursor: pointer;
-  transition: background-color .3s;
+  transition: background-color .3s, transform .3s;
 
   &:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2);
+    transform: translateY(-5px);
     background-color: $basic-red;
   }
 
@@ -42,7 +44,11 @@
 
   &--gallery {
     display: block;
-    font-size: 0.8em
+    padding-top: 22px;
+    padding-bottom: 22px;
+    font-size: 1em;
+    min-width: 300px;
+    height: auto;
   }
 
   &--order-block {
