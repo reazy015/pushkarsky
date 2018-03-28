@@ -15,6 +15,10 @@
     display: none;
     flex-wrap: wrap;
   }
+
+  @media (max-width: $tablet-xs-width) {
+    flex-wrap: wrap;
+  }
   
   &--open {
     display: flex;
@@ -50,6 +54,9 @@
   @media (min-width: $tablet-xs-width) {
     flex: 0 1 50%;
     padding-top: 65px;
+  }
+  @media (max-width: $tablet-xs-width) {
+    margin: auto;
   }
 }
 .body--about .header-nav-list {
