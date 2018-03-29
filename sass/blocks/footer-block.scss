@@ -67,7 +67,8 @@
   padding-bottom: 36px;
 
   @media (min-width: $tablet-sm-width) {
-    flex: 0 1 151px;
+    flex: 0 1 200px;
+    text-align: left;
   }
 }
 .footer-contacts__phone {
@@ -77,6 +78,10 @@
   font-size: 1.2em;
   font-weight: bold;
   text-align: center;
+
+  @media (min-width: $tablet-sm-width) {
+    text-align: left;
+  }
 }
 .footer-contacts-socials {
   @include list-reset;
