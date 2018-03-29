@@ -57,6 +57,65 @@
 </header>
 
 <main class="contacts">
+    <section class="geo">
+        <div class="geo__map" id="map-contacts"></div>
+        <div class="geo-info">
+            <ul class="geo-info-panel">
+                <li class="geo-info-panel__item" data-target="address">
+                    <svg role="geo-icon" class="geo-icon" width="14" height="18"  viewbox="0 0 97.7 97.7">
+                        <use xlink:href="img/sprite/sprite.svg#002-placeholder-filled-point"></use>
+                    </svg>
+                </li>
+                <li class="geo-info-panel__item" data-target="mail">
+                    <svg role="geo-icon" class="geo-icon " width="14" height="18"  viewbox="0 0 395 395">
+                        <use xlink:href="img/sprite/sprite.svg#003-email" ></use>
+                    </svg>
+                </li>
+                <li class="geo-info-panel__item geo-info-panel__item--active" data-target="phone">
+                    <svg role="geo-icon" class="geo-icon geo-icon--active" width="18" height="18" viewbox="0 0 480.6 480.6">
+                        <use xlink:href="img/sprite/sprite.svg#004-technology"></use>
+                    </svg>
+                </li>
+                <li class="geo-info-panel__item" data-target="socials">
+                    <svg role="geo-icon" class="geo-icon" width="15" height="17" viewbox="0 0 15 17">
+                        <use xlink:href="img/sprite/sprite.svg#005-network"></use>
+                    </svg>
+                </li>
+                <li class="geo-info-panel__item" data-target="time">
+                    <svg role="geo-icon" class="geo-icon" width="16" height="16" viewbox="0 0 432.1 432.1">
+                        <use xlink:href="img/sprite/sprite.svg#001-time"></use>
+                    </svg>
+                </li>
+                <li class="geo-info-panel__item--active-marker"></li>
+            </ul>
+            <div class="geo-info-wrapper">
+                <div class="geo-info-item" data-target="mail">
+                    <h5 class="geo-info-item__name">E-mail</h5>
+                    <div class="geo-info-item__content">pushkarskispb@gmail.com</div>
+                </div>
+                <div class="geo-info-item" data-target="address">
+                    <h5 class="geo-info-item__name">Адрес</h5>
+                    <div class="geo-info-item__content">Большая Пушкарская ул., 38</div>
+                </div>
+                <div class="geo-info-item geo-info-item--active" data-target="phone">
+                    <h5 class="geo-info-item__name">Телефон</h5>
+                    <div class="geo-info-item__content">+7 (921) 943-38-38</div>
+                </div>
+                <div class="geo-info-item" data-target="socials">
+                    <h5 class="geo-info-item__name">Мы в социальных сетях</h5>
+                    <ul class="gallery-info-socials gallery-info-socials--info">
+                        <li class="gallery-info-socials__item"><a href="https://vk.com/pushkarskispb "><i class="fab fa-vk"></i></a></li>
+                        <li class="gallery-info-socials__item"><a href="https://www.facebook.com/pushkarskispb/"><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="gallery-info-socials__item"><a href="https://www.instagram.com/pushkarskispb/"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="geo-info-item" data-target="time">
+                    <h5 class="geo-info-item__name">Время работы: </h5>
+                    <div class="gallery-info__schedule gallery-info__schedule--info" >ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-СБ 12:00 - 00:00</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="callback">
         <div class="container container--callback">
             <div class="callback-img-wrapper">
@@ -81,65 +140,6 @@
             </div>
         </div>
     </section>
-    <section class="geo">
-        <div class="geo__map" id="map-contacts"></div>
-        <div class="geo-info">
-            <ul class="geo-info-panel">
-                <li class="geo-info-panel__item" data-target="address">
-                    <svg role="geo-icon" class="geo-icon" width="14" height="18"  viewbox="0 0 97.7 97.7">
-                        <use xlink:href="img/sprite/sprite.svg#002-placeholder-filled-point"></use>
-                    </svg>
-                </li>
-                <li class="geo-info-panel__item geo-info-panel__item--active" data-target="mail">
-                    <svg role="geo-icon" class="geo-icon  geo-icon--active" width="14" height="18"  viewbox="0 0 395 395">
-                        <use xlink:href="img/sprite/sprite.svg#003-email" ></use>
-                    </svg>
-                </li>
-                <li class="geo-info-panel__item" data-target="phone">
-                    <svg role="geo-icon" class="geo-icon" width="18" height="18" viewbox="0 0 480.6 480.6">
-                        <use xlink:href="img/sprite/sprite.svg#004-technology"></use>
-                    </svg>
-                </li>
-                <li class="geo-info-panel__item" data-target="socials">
-                    <svg role="geo-icon" class="geo-icon" width="15" height="17" viewbox="0 0 15 17">
-                        <use xlink:href="img/sprite/sprite.svg#005-network"></use>
-                    </svg>
-                </li>
-                <li class="geo-info-panel__item" data-target="time">
-                    <svg role="geo-icon" class="geo-icon" width="16" height="16" viewbox="0 0 432.1 432.1">
-                        <use xlink:href="img/sprite/sprite.svg#001-time"></use>
-                    </svg>
-                </li>
-            </ul>
-            <div class="geo-info-wrapper">
-                <div class="geo-info-item geo-info-item--active" data-target="mail">
-                    <h5 class="geo-info-item__name">E-mail</h5>
-                    <div class="geo-info-item__content">pushkarskispb@gmail.com</div>
-                </div>
-                <div class="geo-info-item" data-target="address">
-                    <h5 class="geo-info-item__name">Адрес</h5>
-                    <div class="geo-info-item__content">Большая Пушкарская ул., 38</div>
-                </div>
-                <div class="geo-info-item" data-target="phone">
-                    <h5 class="geo-info-item__name">Телефон</h5>
-                    <div class="geo-info-item__content">+7 (921) 943-38-38</div>
-                </div>
-                <div class="geo-info-item" data-target="socials">
-                    <h5 class="geo-info-item__name">Мы в социальных сетях</h5>
-                    <ul class="gallery-info-socials gallery-info-socials--info">
-                        <li class="gallery-info-socials__item"><a href="https://vk.com/pushkarskispb "><i class="fab fa-vk"></i></a></li>
-                        <li class="gallery-info-socials__item"><a href="https://www.facebook.com/pushkarskispb/"><i class="fab fa-facebook-f"></i></a></li>
-                        <li class="gallery-info-socials__item"><a href="https://www.instagram.com/pushkarskispb/"><i class="fab fa-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="geo-info-item" data-target="time">
-                    <h5 class="geo-info-item__name">Время работы: </h5>
-                    <div class="gallery-info__schedule gallery-info__schedule--info" >ПН-ЧТ,ВС 12:00 - 23:00<br>ПТ-СБ 12:00 - 00:00</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
 </main>
 
 

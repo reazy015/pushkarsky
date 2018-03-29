@@ -7,8 +7,8 @@ ymaps.ready(init);
 function init () {
     myMap = new ymaps.Map('map', {
         center: [59.959528, 30.304862],
-        zoom: 15,
-        controls: []
+        zoom: 18,
+        controls: ['zoomControl', 'searchControl', 'typeSelector',  'fullscreenControl', 'routeButtonControl']
     }, {
         searchControlProvider: 'yandex#search'
     });
@@ -18,7 +18,7 @@ function init () {
         iconLayout: 'default#image',
         iconImageHref: './img/icons/map_point.svg',
         iconImageSize: [40, 65],
-        iconImageOffset: [-5, -60]
+        iconImageOffset: [20, -70]
     });
 
     myMap.geoObjects.add(myPlacemark);

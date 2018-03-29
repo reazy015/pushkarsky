@@ -82,7 +82,7 @@ $section-rotate: 30;
   transform: skewX(-30deg) translateZ(0);
   overflow: hidden;
   margin-left: -2px;
-  transition: flex-grow .3s;
+  transition: flex-grow .6s;
 
   @media (min-width: $tablet-lg-width) {
     transform: skewX(-51deg);
@@ -93,6 +93,10 @@ $section-rotate: 30;
     @media (min-width: $tablet-lg-width) {
       flex-grow: 2;
     }
+  }
+
+  &:hover:after {
+    background-color: rgba(0, 0, 0, 0.1);
   }
 
   &:before {
@@ -118,6 +122,7 @@ $section-rotate: 30;
     width: 400%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
+    transition: background-color .4s;
 
     @media (min-width: $tablet-lg-width) {
 

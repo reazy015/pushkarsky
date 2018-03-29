@@ -37,6 +37,7 @@
 .body--about .header-nav {
   @media (min-width: $tablet-lg-width) {
     position: static;
+    display: flex;
     height: auto;
     transform: translate(0%);
     background-color: transparent;

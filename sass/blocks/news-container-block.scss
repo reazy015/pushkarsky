@@ -12,8 +12,12 @@
 }
 .news-decor {
   text-align: center;
-  margin-top: 52px;
-  margin-bottom: 52px;
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.news-decor img {
+  max-width: 100%;
+  height: auto;
 }
 .news {
   max-width: 1420px;
