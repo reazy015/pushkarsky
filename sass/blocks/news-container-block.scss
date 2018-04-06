@@ -1,14 +1,19 @@
+.news {
+  max-width: 1136px;
+  margin: auto;
+  padding-top: 75px;
+}
 .news-container {
   display: flex;
   flex-wrap: wrap;
 
-  @media (min-width: $tablet-lg-width) {
+  @media (min-width: $tablet-sm-width) {
     justify-content: center;
   }
 }
 .news__header {
   text-align: center;
-  margin-top: 75px;
+  margin-top: 0;
 }
 .news-decor {
   text-align: center;
@@ -18,10 +23,6 @@
 .news-decor img {
   max-width: 100%;
   height: auto;
-}
-.news {
-  max-width: 1420px;
-  margin: auto;
 }
 .news-item {
   @media (min-width: $tablet-sm-width) {
@@ -39,6 +40,6 @@
   }
 }
 .news-img img {
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }

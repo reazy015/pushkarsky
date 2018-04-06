@@ -63,15 +63,26 @@
 .body--about .header-nav-list {
   @media (min-width: $tablet-lg-width) {
     display: flex;
-    flex: 0 1 662px;
+    flex: 1 1 662px;
     padding: 0;
     justify-content: space-between;
-    margin-left: auto;
+    margin-left: 80px;
+    margin-right: 80px;
   }
 }
 .header-nav-item {
   padding-top: 20px;
   padding-bottom: 20px;
+
+  &--phone {
+    display: none;
+    color: $basic-submit-red;
+    font-weight: bold;
+
+    @media (min-width: $tablet-lg-width) {
+      display: block;
+    }
+  }
 }
 .header-nav__link {
   @include link-reset;

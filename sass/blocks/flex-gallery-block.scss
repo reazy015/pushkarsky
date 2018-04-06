@@ -82,21 +82,24 @@ $section-rotate: 30;
   transform: skewX(-30deg) translateZ(0);
   overflow: hidden;
   margin-left: -2px;
-  transition: flex-grow .6s;
+  transition: flex 1s, flex-grow .3s;
 
   @media (min-width: $tablet-lg-width) {
     transform: skewX(-51deg);
   }
 
-
   &:hover {
     @media (min-width: $tablet-lg-width) {
-      flex-grow: 2;
+      flex-grow: 1;
     }
   }
 
   &:hover:after {
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover:before {
+    background-position: 100% 30%!important;
   }
 
   &:before {
@@ -107,6 +110,7 @@ $section-rotate: 30;
     width: 400%;
     height: 100%;
     transform: skewX(30deg);
+    transition: background-position 3s;
 
     @media (min-width: $tablet-lg-width) {
       transform: skewX(51deg);
@@ -122,7 +126,7 @@ $section-rotate: 30;
     width: 400%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.3);
-    transition: background-color .4s;
+    transition: background-color 1s;
 
     @media (min-width: $tablet-lg-width) {
 

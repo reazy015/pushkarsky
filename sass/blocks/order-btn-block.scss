@@ -14,7 +14,7 @@
 
   &:hover {
     box-shadow: 0px 0px 32px 0px rgba(9,12,51,1);
-    background-color: $basic-red;
+    background-color: $order-btn-hover;
   }
 
   &--header {
@@ -83,7 +83,9 @@
 
   &--callback-block {
     display: block;
+    width: 224px!important;
     font-size: 0.8em;
+    font-weight: 500;
   }
 
   &--events {

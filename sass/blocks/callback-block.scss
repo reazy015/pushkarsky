@@ -95,6 +95,13 @@
   color: $basic-white;
   padding: 15px 20px;
   border-radius: 50px;
+  transition: background-color .3s, box-shadow .3s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0px 0px 32px 0px rgba(9,12,51,1);
+    background-color: $basic-submit-red;
+  }
 
   @media (min-width: $tablet-sm-width) {
     width: 223px;
@@ -108,15 +115,32 @@
   }
 }
 .callback-block {
-  padding-top: 75px;
-  padding-bottom: 75px;
+  padding-top: 35px;
+  padding-bottom: 35px;
   background-color: $basic-white;
   text-align: center;
   box-shadow: 0px 0px 25px -8px rgba(0,0,0,0.55);
   width: 474px;
   display: none;
+  background-image: url('../img/bg/callback-block-bg.png');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 60% 50%;
   
   @media (min-width: $tablet-lg-width) {
     display: block;
   }
+}
+.callback-block-logo-wrapper {
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 25px;
+}
+.callback-block-logo-wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+.download-btn--callback {
+  width: 224px!important;
 }

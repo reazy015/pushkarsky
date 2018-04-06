@@ -74,7 +74,9 @@
     margin-right: 2%;
     text-align: center;
     min-height: 245px;
-    justify-content: space-around;
+    padding-top: 63px;
+    background-size: cover;
+
 
     &:nth-of-type(2n) {
       margin-right: 2%;
@@ -89,6 +91,10 @@
   width: 50px;
   margin-right: 13px;
   flex-shrink: 0;
+
+  @media (min-width: $tablet-lg-width) {
+    margin-bottom: 30px;
+  }
 }
 .advantages-item-icon__img {
   max-width: 100%;

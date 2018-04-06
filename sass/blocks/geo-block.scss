@@ -53,23 +53,6 @@
     fill: $basic-blue;
   }
 }
-
-.geo-info-panel__item--active {
-  //position: relative;
-  //background-color: $basic-blue;
-  //border-bottom: 1px solid $basic-blue;
-  //
-  //&:before {
-  //  position: absolute;
-  //  content: '';
-  //  display: block;
-  //  bottom: 100%;
-  //  left: 0;
-  //  right: 0;
-  //  height: 16px;
-  //  background-color: inherit;
-  //}
-}
 .geo-info-panel__item--active-marker {
   position: absolute;
   top: 0;
