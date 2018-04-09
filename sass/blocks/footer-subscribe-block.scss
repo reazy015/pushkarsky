@@ -33,6 +33,10 @@
   position: relative;
   top: 10px;
 
+  &:hover {
+    background-color: $order-btn-hover;
+  }
+
   &:before {
     position: absolute;
     display: block;
