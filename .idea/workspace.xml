@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7450cdfc-b988-47d1-99c2-42ed559bb9ef" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/about.html" afterPath="$PROJECT_DIR$/about.html" />
-      <change beforePath="$PROJECT_DIR$/contacts.html" afterPath="$PROJECT_DIR$/contacts.html" />
-      <change beforePath="$PROJECT_DIR$/events.html" afterPath="$PROJECT_DIR$/events.html" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/menu.html" afterPath="$PROJECT_DIR$/menu.html" />
-      <change beforePath="$PROJECT_DIR$/news-item.html" afterPath="$PROJECT_DIR$/news-item.html" />
-      <change beforePath="$PROJECT_DIR$/news.html" afterPath="$PROJECT_DIR$/news.html" />
       <change beforePath="$PROJECT_DIR$/sass/blocks/footer-block.scss" afterPath="$PROJECT_DIR$/sass/blocks/footer-block.scss" />
-      <change beforePath="$PROJECT_DIR$/sass/blocks/footer-subscribe-block.scss" afterPath="$PROJECT_DIR$/sass/blocks/footer-subscribe-block.scss" />
-      <change beforePath="$PROJECT_DIR$/video-page.html" afterPath="$PROJECT_DIR$/video-page.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -113,20 +103,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer-block.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="footer-block.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/sass/blocks/footer-block.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="304">
-              <caret line="97" column="15" lean-forward="false" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
+              <caret line="97" column="17" lean-forward="true" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer-subscribe-block.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="footer-subscribe-block.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/sass/blocks/footer-subscribe-block.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
+            <state relative-caret-position="477">
               <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
               <folding />
             </state>
@@ -239,8 +229,8 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/contacts.html" />
         <option value="$PROJECT_DIR$/video-page.html" />
-        <option value="$PROJECT_DIR$/sass/blocks/footer-block.scss" />
         <option value="$PROJECT_DIR$/sass/blocks/footer-subscribe-block.scss" />
+        <option value="$PROJECT_DIR$/sass/blocks/footer-block.scss" />
       </list>
     </option>
   </component>
@@ -386,12 +376,12 @@
       <workItem from="1523261768505" duration="3606000" />
       <workItem from="1523278157744" duration="656000" />
       <workItem from="1523279417589" duration="104000" />
-      <workItem from="1523287106436" duration="804000" />
+      <workItem from="1523287106436" duration="948000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289944000" />
+    <option name="totallyTimeSpent" value="290088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1296" height="1000" extended-state="6" />
@@ -788,18 +778,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/blocks/footer-block.scss">
+    <entry file="file://$PROJECT_DIR$/sass/blocks/footer-subscribe-block.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="97" column="15" lean-forward="false" selection-start-line="97" selection-start-column="15" selection-end-line="97" selection-end-column="15" />
+        <state relative-caret-position="477">
+          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/sass/blocks/footer-subscribe-block.scss">
+    <entry file="file://$PROJECT_DIR$/sass/blocks/footer-block.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="36" column="39" lean-forward="false" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="39" />
+        <state relative-caret-position="304">
+          <caret line="97" column="17" lean-forward="true" selection-start-line="97" selection-start-column="17" selection-end-line="97" selection-end-column="17" />
           <folding />
         </state>
       </provider>
