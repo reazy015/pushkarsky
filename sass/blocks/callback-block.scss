@@ -2,7 +2,7 @@
   padding-bottom: 64px;
 
   @media (min-width: $tablet-sm-width) {
-    background-image: url(/img/bg/about-bg.jpg);
+    background-image: url(../img/bg/about-bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
@@ -126,6 +126,16 @@
   background-repeat: no-repeat;
   background-size: auto;
   background-position: 60% 50%;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:hover > .download-btn {
+    background-color: $order-btn-hover;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 32px 0px rgba(9, 12, 51, 1);
+  }
   
   @media (min-width: $tablet-lg-width) {
     display: block;

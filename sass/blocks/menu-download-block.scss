@@ -20,6 +20,16 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: opacity .3s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:hover > .download-btn {
+    background-color: $order-btn-hover;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -48,8 +58,10 @@
   padding-top: 38px;
   padding-bottom: 38px;
 
-  &:hover {
-
+  &:hover > .download-btn {
+    background-color: $order-btn-hover;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 32px 0px rgba(9, 12, 51, 1);
   }
 
   @media (min-width: $tablet-xs-width) {
@@ -92,12 +104,31 @@
   font-family: "Calibri", "Arial", sans-serif;
   font-size: 14px;
   transition: background-color .3s,
-              box-shadow .3s,
-              transform .3s;
+  box-shadow .3s,
+  transform .3s;
 
-  &:hover {
-    background-color: $basic-red;
+  &--active {
+    background-color: $order-btn-hover;
     transform: translateY(-5px);
-    box-shadow: 0px 0px 32px 0px rgba(9,12,51,1);
+    box-shadow: 0px 0px 32px 0px rgba(9, 12, 51, 1);
+  }
+}
+.menu-download__link-total {
+  @include link-reset;
+  color: $basic-white;
+  display: block;
+
+  &:hover > .menu-download-block {
+    opacity: 0.8;
+  }
+
+  &:hover > .callback-block {
+    opacity: 0.8;
+  }
+
+  &:hover > .menu-download-block .download-btn {
+    background-color: $order-btn-hover;
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 32px 0px rgba(9, 12, 51, 1);
   }
 }
