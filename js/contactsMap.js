@@ -13,12 +13,13 @@ function init () {
         searchControlProvider: 'yandex#search'
     });
 
-    var myPlacemark = new ymaps.Placemark(myContactsMap.getCenter(),{},{
-
+    var myPlacemark = new ymaps.Placemark([59.960494, 30.305978],{
+        hintContent: 'Мы находимся по адресу: Большая Пушкарская ул., 38'
+    },{
         iconLayout: 'default#image',
         iconImageHref: './img/icons/map_point.svg',
         iconImageSize: [40, 65],
-        iconImageOffset: [20, -70]
+        iconImageOffset: [-20, -70]
     });
 
     myContactsMap.geoObjects.add(myPlacemark);

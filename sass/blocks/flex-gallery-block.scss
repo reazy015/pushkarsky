@@ -51,6 +51,10 @@ $section-rotate: 30;
   @media (min-width: $tablet-lg-width) {
     max-height: 93vh;
   }
+
+  @media (max-height: 520px) {
+    height: 560px;
+  }
 }
 .flex-gallery {
   display: flex;

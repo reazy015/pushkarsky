@@ -11,6 +11,7 @@
   animation-duration: .4s;
   animation-timing-function: linear;
   animation-fill-mode: both;
+  overflow: scroll;
 }
 .popup-module {
   position: absolute;
@@ -24,6 +25,7 @@
   font-size: 18px;
   text-align: center;
   color: $basic-blue;
+  overflow: scroll;
 
   @media (max-width: $tablet-xs-width) {
     font-size: 16px;
@@ -39,6 +41,11 @@
 
   @media (max-width: $mobile-lg-width) {
     min-width: 320px;
+  }
+
+  @media (max-width: $mobile-md-width) {
+    top: 0;
+    margin-left: 0;
   }
 
 }
